@@ -21,6 +21,7 @@ public class LordandTaylorScriptBaseJUnit extends PageBase{
     protected ViewBagPage viewBagPage;
     protected EyesPage eyesPage;
     protected ShiseidoProductPage shiseidoProductPage;
+    protected SignInPage signInPage;
 
     @Before
     public void beforeMethod() throws Exception{
@@ -38,6 +39,7 @@ public class LordandTaylorScriptBaseJUnit extends PageBase{
         viewBagPage = new ViewBagPage();
         eyesPage = new EyesPage();
         shiseidoProductPage = new ShiseidoProductPage();
+        signInPage = new SignInPage();
 
         driver.navigate().to("https://www.lordandtaylor.com/Entry.jsp");
     }
@@ -54,6 +56,7 @@ public class LordandTaylorScriptBaseJUnit extends PageBase{
         viewBagPage = null;
         eyesPage = null;
         shiseidoProductPage = null;
+        signInPage = null;
 
         DriverFactory.getInstance().removeDriver();
     }

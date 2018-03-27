@@ -22,7 +22,7 @@ import org.junit.runner.RunWith;
             glue = {//"com.shiftedtech.qa.framework.steps.hook", //use code to specify which steps file you want, in this case hook.
                     //"com.shiftedtech.qa.framework.steps", //use code to specify which steps file you want.
                     "com.lordandtaylor.qa.framework.steps"}, //use code to use all steps files.
-            //dryRun = true,
+            //dryRun = true,  //dryRun is used to check if step definition is there or not, if not, it will create one. Good way is to do dryRun to get all stepdef. from feature file.
             plugin={
                     "pretty:target/cucumber-test-report/cucumber-pretty.txt",
                     "html:target/cucumber-test-report",

@@ -19,15 +19,15 @@ public class LordandTaylorCartTestJUnit extends LordandTaylorScriptBaseJUnit {
         exfoliatorsPage.verifyProductName();
         exfoliatorsPage.verifyProductPrice();
         exfoliatorsPage.clickLancomeProductImage();
-        //lancomeProductPage.verifyPageTitle("Lancome - Comforting Exfoliating Cream/3.4 oz. - lordandtaylor.com"); //****need to figure out circumflex
+        lancomeProductPage.verifyPageTitle("Lancôme - Comforting Exfoliating Cream/3.4 oz. - lordandtaylor.com");
         lancomeProductPage.verifyLancomeProductTitle();
         lancomeProductPage.chooseProductSize();
         lancomeProductPage.selectQuantity();
         lancomeProductPage.chooseShipOption();
         lancomeProductPage.clickAddToBag();
         viewBagPage.verifyBagPage();
-        viewBagPage.verifyTotalItemsInBag("Items (3)");
-        //viewBagPage.verifyProductBrand("Lancome"); //***figure out circumflex***
+        viewBagPage.verifyTotalItemsInBag("Items (2)");
+        viewBagPage.verifyProductBrand("Lancôme");
         viewBagPage.verifyLancomeProductName("Comforting Exfoliating Cream/3.4 oz.");
         //viewBagPage.verifyProductQuantity("2");  //***issue is actual is showing blank, but suppose to be 2.***
         viewBagPage.verifySubTotal("$52.00");

@@ -22,11 +22,11 @@ public class LordandTaylorLoginJUnit extends LordandTaylorScriptBaseJUnit {
     public void loginSuccessfullyTest(String email, String password, String greeting){
         homePage.verifyPageTitle("Lord & Taylor: Designer Clothing, Shoes, Handbags, Accessories & More");
         homePage.closeEmailPopUp();
-        homePage.clickSignInLink();
-        homePage.enterSignInInfo(email,password);
-        homePage.clickSignIn();
-        homePage.verifyCustomerGreetingMessage(greeting);
-        homePage.clickSignOut();
+        signInPage.clickSignInLink();
+        signInPage.enterSignInInfo(email,password);
+        signInPage.clickSignIn();
+        signInPage.verifyCustomerGreetingMessage(greeting);
+        signInPage.clickSignOut();
     }
 
     @DataProvider
@@ -36,7 +36,7 @@ public class LordandTaylorLoginJUnit extends LordandTaylorScriptBaseJUnit {
 
 
         ExcelReader reader = new ExcelReader(dataFile);
-        data = reader.getExcelSheetData("Sheet1", true);
+        data = reader.getExcelSheetData("Sheet1",true);
         return data;
     }
 

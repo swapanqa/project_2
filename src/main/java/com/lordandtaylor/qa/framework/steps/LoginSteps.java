@@ -49,8 +49,8 @@ public class LoginSteps extends StepBase{
     public void user_click_SignIn_button(){
         WebElement signInButton = driver.findElement(By.xpath("//button[@class='hbc-button hbc-button--full hbc-button--primary sign-into-account__submit-button']"));
         highlight(signInButton);//button[contains(@class,'sign-into-account__submit-button')]
-        //click(signInButton);
-        jsClick(signInButton);
+        click(signInButton);
+        //jsClick(signInButton);
     }
 
 }

@@ -20,7 +20,7 @@ public class LancomeProductPage extends PageBase{
     @FindBy(how = How.ID, using = "numberInput")
     private WebElement quanitiy;
 
-    @FindBy(how = How.XPATH, using = "//span[@class='radiogroup__radio-button'][@data-reactid='50']")
+    @FindBy(how = How.XPATH, using = "//div[@id='pdp-content-area']//span[@class='radiogroup__radio-button'][@data-reactid='48']")
     private WebElement shipOption;
 
     @FindBy(how = How.XPATH, using = "//button[@class='hbc-button hbc-button--full hbc-button--primary']")
