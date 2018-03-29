@@ -7,6 +7,9 @@ import cucumber.api.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+
+import javax.enterprise.inject.Stereotype;
+
 import static org.hamcrest.MatcherAssert.assertThat;
 import java.util.Arrays;
 import java.util.List;
@@ -73,8 +76,10 @@ public class AccountPageSteps extends StepBase {
                 "We're sorry, your entry does not match our records. You have 2 more attempts. Forgot Password?",
                 "We're sorry, your entry does not match our records. You have 1 more attempt. Forgot Password?"};
         List<String> expectedAlertList = Arrays.asList(expectedAlert);
-        Assert.assertTrue(expectedAlertList.contains(dangerAlert));
-
+        String theList = expectedAlertList.toString();
+        if(dangerAlert.contentEquals(theList)) {
+            Assert.assertTrue(expectedAlertMessage.equals(theList));
+        }
 /*        if(dangerAlert.equals(expectedAlertList)){
             System.out.println("match!!!");
         }else {
