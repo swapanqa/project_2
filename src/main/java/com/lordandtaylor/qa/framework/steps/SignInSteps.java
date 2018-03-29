@@ -16,7 +16,7 @@ import java.util.regex.Pattern;
 /**
  * @author Hema on  3/9/2018
  */
-public class LoginSteps extends StepBase{
+public class SignInSteps extends StepBase{
 
 
     @When("^User click SignIn link$")

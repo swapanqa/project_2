@@ -52,4 +52,14 @@ public class ApplicationSteps extends StepBase{
         Assert.assertEquals("Lord & Taylor: Designer Clothing, Shoes, Handbags, Accessories & More",homePageTitle);
     }
 
+    @When("^User navigate Beauty department to Exfoliators category$")
+    public void user_navigate_Beauty_department_to_Exfoliators_category() {
+        homePage.openExfoliatorsPage();
+    }
+
+    @When("^User navigate Beauty department to Eyes category$")
+    public void user_navigate_Beauty_department_to_Eyes_category() {
+        homePage.openEyesPage();
+    }
+
 }

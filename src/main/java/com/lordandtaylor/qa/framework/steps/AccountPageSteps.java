@@ -79,6 +79,8 @@ public class AccountPageSteps extends StepBase {
         String theList = expectedAlertList.toString();
         if(dangerAlert.contentEquals(theList)) {
             Assert.assertTrue(expectedAlertMessage.equals(theList));
+        }else{
+            System.out.println("No match! Probably need to reset password!");
         }
 /*        if(dangerAlert.equals(expectedAlertList)){
             System.out.println("match!!!");
