@@ -48,7 +48,8 @@ public class SignInSteps extends StepBase{
     @When("^User click SignIn button$")
     public void user_click_SignIn_button(){
         WebElement signInButton = driver.findElement(By.xpath("//button[@class='hbc-button hbc-button--full hbc-button--primary sign-into-account__submit-button']"));
-        highlight(signInButton);//button[contains(@class,'sign-into-account__submit-button')]
+        delayFor(5000);
+        highlight(signInButton);
         click(signInButton);
         //jsClick(signInButton);
     }

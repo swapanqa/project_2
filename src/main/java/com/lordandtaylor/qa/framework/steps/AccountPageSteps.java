@@ -39,8 +39,11 @@ public class AccountPageSteps extends StepBase {
 
     @Then("^User click SignOut button$")
     public void user_click_SignOut_button() {
+        delayFor(5000);
         WebElement welcomeAccountLink = driver.findElement(By.xpath("//a[@class='account']"));
+        highlight(welcomeAccountLink);
         hoverAction(welcomeAccountLink);
+        delayFor(5000);
         WebElement signOutButton = driver.findElement(By.xpath("//b[contains(text(),'Sign Out')]"));
         highlight(signOutButton);
         click(signOutButton);
@@ -79,8 +82,9 @@ public class AccountPageSteps extends StepBase {
         String theList = expectedAlertList.toString();
         if(dangerAlert.contentEquals(theList)) {
             Assert.assertTrue(expectedAlertMessage.equals(theList));
+            System.out.println("we have a match!");
         }else{
-            System.out.println("No match! Probably need to reset password!");
+            System.out.println("No match! Need to reset password!");
         }
 /*        if(dangerAlert.equals(expectedAlertList)){
             System.out.println("match!!!");

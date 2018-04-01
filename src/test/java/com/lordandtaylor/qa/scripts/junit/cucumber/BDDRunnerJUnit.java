@@ -17,6 +17,7 @@ import org.junit.runner.RunWith;
             //monochrome = true,
             //features = "src/test/resources/features/", //use this code to run everything or all features (on job may have 100s).
             features = "src/test/resources/features/LordAndTaylorSignIn.feature", //use this code to just run feature file.
+            //features = "src/test/resources/features/LordAndTaylorShipPromo.feature",
             /*features = {"src/test/resources/features/LoginFunctionality2.feature", //use this code,with curly braces and comma, to run multiple feature files.
                     "src/test/resources/features/LoginFunctionality.feature"},*/
             glue = {//"com.shiftedtech.qa.framework.steps.hook", //use code to specify which steps file you want, in this case hook.

@@ -1,6 +1,7 @@
 package com.lordandtaylor.qa.framework.steps;
 
 import com.lordandtaylor.qa.framework.steps.hook.StepBase;
+import cucumber.api.PendingException;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
@@ -23,6 +24,11 @@ public class LancomeProdPageSteps extends StepBase {
     @When("^User select Lancome product quantity as \"([^\"]*)\"$")
     public void user_select_Lancome_product_quantity_as(String arg1) {
         lancomeProductPage.selectQuantity();
+    }
+
+    @When("^User select Lancome shipIt option$")
+    public void user_select_Lancome_shipIt_option() {
+        lancomeProductPage.chooseShipOption();
     }
 
 }

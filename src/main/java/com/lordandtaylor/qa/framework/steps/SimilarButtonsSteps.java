@@ -15,11 +15,6 @@ import org.openqa.selenium.WebElement;
 public class SimilarButtonsSteps extends StepBase{
 
 
-    @When("^User select shipIt option$")
-    public void user_select_shipIt_option() {
-       lancomeProductPage.chooseShipOption();
-    }
-
     @When("^User click addToBag button$")
     public void user_click_addToBag_button() {
         WebElement addToBagButton = driver.findElement(By.xpath("//button[@class='hbc-button hbc-button--full hbc-button--primary']"));
@@ -28,6 +23,7 @@ public class SimilarButtonsSteps extends StepBase{
 
     @When("^User click viewMyBagAndCheckOut$")
     public void user_click_viewMyBagAndCheckOut() {
+        delayFor(5000);
         WebElement viewMyBagAndCheckOutButton = driver.findElement(By.xpath("//div[@class='footer clearfix']//a[@class='sfa-button small transactional']"));
         viewMyBagAndCheckOutButton.click();
 
@@ -36,12 +32,6 @@ public class SimilarButtonsSteps extends StepBase{
     @When("^User click checkout button on bagPage$")
     public void user_click_checkout_button_on_bagPage() {
         viewBagPage.clickCheckoutButton();
-    }
-
-    @Then("^Checkout page should display$")
-    public void checkout_page_should_display() {
-        WebElement verifyCheckout = driver.findElement(By.id("//a[@id='tab-review']"));
-        Assert.assertEquals("REVIEW & SUBMIT", verifyCheckout);
     }
 
 

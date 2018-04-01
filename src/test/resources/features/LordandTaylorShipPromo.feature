@@ -21,16 +21,16 @@
       Then Lancome product page should display
       When User select Lancome product size as "3.4 OZ."
       And User select Lancome product quantity as "2"
-      And User select shipIt option
+      And User select Lancome shipIt option
       And User click addToBag button
       And User click viewMyBagAndCheckOut
       Then BagPage should display
-      When User verify totalItems on LancomeBagPage as "2"
+      When User verify totalItems on LancomeBagPage as "Items (2)"
       And User verify product name on LancomeBagPage as "Comforting Exfoliating Cream/3.4 oz."
       And User verify subTotal on LancomeBagPage as "$52.00"
       And User verify estimatedTotal on LancomeBagPage as "$61.95"
       And User click checkout button on bagPage
-      Then Checkout page should display
+      Then Checkout page should display Lancome products
       When User verify product name on LancomeCheckoutPage as "Comforting Exfoliating Cream/3.4 oz."
       And User verify product quantity on LancomeCheckoutPage as "2"
       And User verify itemTotal on LancomeCheckoutPage as "$52.00"
@@ -46,16 +46,16 @@
        Then Shiseido product page should display
        When User select Shiseido product color as "Br602 Deep Brown"
        And User select Shiseido product quantity as "1"
-       And User select shipIt option
+       And User select Shiseido shipIt option
        And User click addToBag button
        And User click viewMyBagAndCheckOut
        Then Bag page should display
-       When User verify totalItems on ShiseidoBagPage as "1"
+       When User verify totalItems on ShiseidoBagPage as "Items (1)"
        And User verify product name on ShiseidoBagPage as "Natural Eyebrow Pencil/0.1 oz."
        And User verify subTotal on ShiseidoBagPage as "$20.00"
        And User verify estimatedTotal on ShiseidoBagPage as "$25.95"
        And User click checkout button on bagPage
-       Then Checkout page should display
+       Then Checkout page should display Shiseido products
        When User verify product name on ShiseidoCheckoutPage as "Natural Eyebrow Pencil/0.1 oz."
        And User verify product quantity on ShiseidoCheckoutPage as "1"
        And User verify itemTotal on ShiseidoCheckoutPage as "$20.00"

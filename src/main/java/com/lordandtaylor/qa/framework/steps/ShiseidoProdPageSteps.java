@@ -2,6 +2,7 @@ package com.lordandtaylor.qa.framework.steps;
 
 import com.lordandtaylor.qa.framework.pages.PageBase;
 import com.lordandtaylor.qa.framework.steps.hook.StepBase;
+import cucumber.api.PendingException;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
@@ -23,6 +24,11 @@ public class ShiseidoProdPageSteps extends StepBase{
     @When("^User select Shiseido product quantity as \"([^\"]*)\"$")
     public void user_select_Shiseido_product_quantity_as(String arg1) {
         shiseidoProductPage.selectQuantity();
+    }
+
+    @When("^User select Shiseido shipIt option$")
+    public void user_select_Shiseido_shipIt_option() {
+        shiseidoProductPage.chooseShipOption();
     }
 
 }
