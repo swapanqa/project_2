@@ -6,9 +6,12 @@ import com.lordandtaylor.qa.framework.utils.WebElementUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
+import org.junit.runners.Parameterized;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -25,8 +28,15 @@ public class LordandTaylorScriptBaseJUnit extends PageBase{
     protected ShiseidoProductPage shiseidoProductPage;
     protected SignInPage signInPage;
 
+    @Parameterized.Parameter() //***Use to run in Jenkins (parallel in cloud)
+    public String browserName = "Chrome";
+
     @Before
     public void beforeMethod() throws Exception{
+
+        System.out.println("Browser: " + browserName);//used to do Parallel //***Use to run in Jenkins (parallel in cloud)
+        driver = DriverFactory.getInstance(browserName).getDriver(); //used to do Parallel by initaialze and get whatever Driver instance from DriverFactory
+
 
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
@@ -51,8 +61,6 @@ public class LordandTaylorScriptBaseJUnit extends PageBase{
 
     }
 
-
-
     @After
     public void afterMethod(){
 
@@ -66,6 +74,21 @@ public class LordandTaylorScriptBaseJUnit extends PageBase{
         signInPage = null;
 
         DriverFactory.getInstance().removeDriver();
+    }
+
+    public void delayFor(int timeInMili){  //***Use to run in Jenkins (parallel in cloud)
+        //spree.getUtils().delayFor(timeInMili);
+        homePage.delayFor(timeInMili);
+    }
+
+    @Parameterized.Parameters(name = "{index} - Browser - {0}") //This is parameterized method which will open whatever browser you need, but default is chrome.
+    public static Collection<Object[]> browsers(){
+        return Arrays.asList(new Object[][]{
+                {"chrome"}, //note: if you comment any browser, it would just run in the rest that's there.
+                {"firefox"},
+                {"cloud_chrome_64"}, //4.CloudTest-need to put this browser also, that you might want to execute in.
+                //{"cloud_ie_11"} //5.CloudTest-need to put this browser also, that you might want to execute in.
+        });
     }
 
 }

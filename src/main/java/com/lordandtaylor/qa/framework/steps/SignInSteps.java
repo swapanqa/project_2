@@ -49,9 +49,8 @@ public class SignInSteps extends StepBase{
 
     @When("^User click SignIn button$")
     public void user_click_SignIn_button(){
-        delayFor(5000);//div[@class='sign-into-account__button']//span[text()='Sign In']
-        WebElement signInButton = driver.findElement(By.xpath("//div[@id='account-content-area']//span[text()='Sign In']"));
-//div[@class='sign-in__account']//form[@class='sign-into-account__form']//span[text()='Sign In']
+        delayFor(5000);//div[@id='account-content-area']//span[text()='Sign In']
+        WebElement signInButton = driver.findElement(By.xpath("//span[contains(text(),'Sign In')]"));
         highlight(signInButton);
         click(signInButton);
         //jsClick(signInButton);

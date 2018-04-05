@@ -2,10 +2,15 @@ package com.lordandtaylor.qa.scripts.junit.cucumber.functional;
 
 import com.lordandtaylor.qa.framework.scriptbase.LordandTaylorScriptBaseJUnit;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 
 /**
  * @author Hema on  3/20/2018
+ *Note: To run Jenkins CI, need to change uncomment @RunsWith in this class and uncomment 3 things in LordandTaylorScriptBaseJUnit.java
  */
+
+@RunWith(Parameterized.class) //***Use to run in Jenkins (parallel in cloud)
 public class LordandTaylorCartTestJUnit extends LordandTaylorScriptBaseJUnit {
 
     @Test
@@ -70,7 +75,6 @@ public class LordandTaylorCartTestJUnit extends LordandTaylorScriptBaseJUnit {
         checkoutPage.verifyShipping("$5.95");
         checkoutPage.verifyTax("$0.00");
         checkoutPage.verifyOrderTotal("$25.95");
-
     }
 
 }

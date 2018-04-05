@@ -44,7 +44,7 @@ public class DriverFactory {
         FirefoxDriverManager.getInstance().setup(); //get instance of specific FireFox browser,default will be chrome if not specified, because of code just below.
         ChromeDriverManager.getInstance().setup(); //get instance of specific Chrome browser, ,default will be chrome if not specified, because of code just below.
 
-        if(browserName.equalsIgnoreCase("chrome")){ //if statement to set instance of whatever browser is passes as parameter.
+        if(browserName.equalsIgnoreCase("chrome")){ //if statement to set instance of whatever browser it passes as parameter.
             instance.driver.set(new ChromeDriver());
         }
         else if(browserName.equalsIgnoreCase("firefox")){
@@ -92,7 +92,7 @@ public class DriverFactory {
     {
         @Override
         protected WebDriver initialValue() // Create temporary instance of class and override initialValue protected method.
-        {
+        {  //Chrome will be default if you dont specify another browser (see above).
             ChromeDriverManager.getInstance().setup(); //To override this method, everytime WebDriver instance is made...
             return new ChromeDriver(); // ...a ChromeDriver instance is created and stored in datastructure for that instance.
         }

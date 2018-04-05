@@ -8,11 +8,13 @@ import com.tngtech.java.junit.dataprovider.DataProviderRunner;
 import com.tngtech.java.junit.dataprovider.UseDataProvider;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 
 /**
  * @author Hema on  3/19/2018
  * Lord & Taylor functional test for login using DataDriven concept.
  */
+
 
 @RunWith(DataProviderRunner.class)
 public class LordandTaylorLoginJUnit extends LordandTaylorScriptBaseJUnit {
