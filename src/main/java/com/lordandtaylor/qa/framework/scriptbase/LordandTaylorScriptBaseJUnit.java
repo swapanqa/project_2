@@ -7,6 +7,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -41,7 +43,12 @@ public class LordandTaylorScriptBaseJUnit extends PageBase{
         shiseidoProductPage = new ShiseidoProductPage();
         signInPage = new SignInPage();
 
-        driver.navigate().to("https://www.lordandtaylor.com/Entry.jsp");
+        try{
+            driver.navigate().to(new URL("https://www.lordandtaylor.com/Entry.jsp"));
+        }catch (MalformedURLException ex){
+            ex.printStackTrace();
+        }
+
     }
 
 

@@ -6,8 +6,10 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 
+import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -47,11 +49,14 @@ public class SignInSteps extends StepBase{
 
     @When("^User click SignIn button$")
     public void user_click_SignIn_button(){
-        WebElement signInButton = driver.findElement(By.xpath("//button[@class='hbc-button hbc-button--full hbc-button--primary sign-into-account__submit-button']"));
-        delayFor(5000);
+        delayFor(5000);//div[@class='sign-into-account__button']//span[text()='Sign In']
+        WebElement signInButton = driver.findElement(By.xpath("//div[@id='account-content-area']//span[text()='Sign In']"));
+//div[@class='sign-in__account']//form[@class='sign-into-account__form']//span[text()='Sign In']
         highlight(signInButton);
         click(signInButton);
         //jsClick(signInButton);
+
+
     }
 
 }

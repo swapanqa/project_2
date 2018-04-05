@@ -1,10 +1,15 @@
 package com.lordandtaylor.qa.framework.pages;
 
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * @author Hema on  3/21/2018
@@ -14,7 +19,7 @@ public class EyesPage extends PageBase {
     @FindBy(how = How.XPATH, using = "//span[contains(text(),'EYES')]")
     private WebElement eyesPage;
 
-    @FindBy(how = How.XPATH, using = "//div[@id='pc-top']//ol[@class='pa-page-number']//a[contains(text(),'3')]")
+    @FindBy(how = How.XPATH, using = "//div[@id='pc-top']//ol[@class='pa-page-number']//a[contains(text(),'5')]")
     private WebElement pageNumber;
 
     @FindBy(how = How.ID, using = "img_0500016268484-0")

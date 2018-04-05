@@ -10,6 +10,8 @@
       When User click SignIn link
       Then Browser should display SignIn page
 
+    @regression
+    @functional
     Scenario: 1. Valid email and valid password
       When User enter email as "hema_ahmad@yahoo.com"
       And User enter password as "Hema&123"
@@ -17,6 +19,8 @@
       Then Account page should display greeting message
       And User click SignOut button
 
+    @debug
+    @functional
     Scenario Outline: 2. Invalid email and valid password
       When User enter email as "<Email>"
       And User enter password as "<Password>"
@@ -27,6 +31,8 @@
       |                         | Hema&123      | This field is required.         |
       | hemaahmad@gmail         | Hema&123      | Enter a valid email address.    |
 
+    @smoke
+    @functional
     Scenario Outline: 3. Valid email and invalid password
       When User enter email as "<Email>"
       And User enter password as "<Password>"
@@ -36,15 +42,16 @@
       |Email                         |Password     |ErrorMessage             |
       |hema_ahmad@yahoo.com          |             |This field is required.  |
 
-    Scenario Outline: 4. Either invalid email or invalid password
-      When User enter email as "<Email>"
-      And User enter password as "<Password>"
-      And User click SignIn button
-      Then Alert should display as "<AlertMessage>"
-      Examples:
-      | Email                | Password   | AlertMessage                                                          |
-      | hemaahmad@gmail.com  | Hema&123   | Sorry, this does not match our records. Please try again.             |
-      | hema_ahmad@yahoo.com | ant        | We're sorry, your entry does not match our records. Forgot Password?  |
+    #@functional
+    #Scenario Outline: 4. Either invalid email or invalid password
+     # When User enter email as "<Email>"
+      #And User enter password as "<Password>"
+      #And User click SignIn button
+      #Then Alert should display
+      #Examples:
+      #| Email                | Password   |
+      #| hemaahmad@gmail.com  | Hema&123   |
+      #| hema_ahmad@yahoo.com | ant        |
 
 
 

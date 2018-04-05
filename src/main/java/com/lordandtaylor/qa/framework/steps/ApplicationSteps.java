@@ -8,6 +8,9 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 /**
  * @author Hema on  3/9/2018
  */
@@ -21,7 +24,12 @@ public class ApplicationSteps extends StepBase{
 
     @When("^User navigate to site$")
     public void user_navigate_to_site(){
-        driver.navigate().to("http://www.lordandtaylor.com");
+        //driver.navigate().to("http://www.lordandtaylor.com");
+        try{
+            driver.navigate().to(new URL("https://www.lordandtaylor.com/Entry.jsp"));
+        }catch (MalformedURLException ex){
+            ex.printStackTrace();
+        }
     }
 
     @When("^User close emailPopUp button$")

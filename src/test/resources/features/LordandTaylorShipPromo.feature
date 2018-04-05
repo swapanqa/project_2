@@ -14,6 +14,8 @@
       And User click SignIn button
       Then Account page should display greeting message
 
+    @smoke
+    @functional
     Scenario: 1. Free shipping OVER $49 purchase from Beauty
       When User navigate Beauty department to Exfoliators category
       Then Exfoliators page should display
@@ -39,6 +41,8 @@
       And User verify orderTotal on LancomeCheckoutPage as "$52.00"
       And User click SignOut button
 
+     @debug
+     @functional
      Scenario: 2. No free shipping UNDER $49 purchase from Beauty
        When User navigate Beauty department to Eyes category
        Then Eyes page should display

@@ -2,10 +2,12 @@ package com.lordandtaylor.qa.framework.steps;
 
 import com.lordandtaylor.qa.framework.steps.hook.StepBase;
 import com.lordandtaylor.qa.framework.utils.RegexArrayMatcher;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebElement;
 
 import javax.enterprise.inject.Stereotype;
@@ -13,6 +15,7 @@ import javax.enterprise.inject.Stereotype;
 import static org.hamcrest.MatcherAssert.assertThat;
 import java.util.Arrays;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -65,8 +68,8 @@ public class AccountPageSteps extends StepBase {
         Assert.assertEquals(passwordErrorMessage, expectedErrorMessage);
     }
 
-    @Then("^Alert should display as \"([^\"]*)\"$")
-    public void alert_should_display_as(String expectedAlertMessage) {
+/*    @Then("^Alert should display$")
+    public void alert_should_display() {
         delayFor(5000);
         WebElement alert = driver.findElement(By.xpath("//div[@class='alert alert--danger']"));
         String dangerAlert = alert.getText();
@@ -80,37 +83,25 @@ public class AccountPageSteps extends StepBase {
                 "We're sorry, your entry does not match our records. You have 1 more attempt. Forgot Password?"};
         List<String> expectedAlertList = Arrays.asList(expectedAlert);
         String theList = expectedAlertList.toString();
-        if(dangerAlert.contentEquals(theList)) {
-            Assert.assertTrue(expectedAlertMessage.equals(theList));
-            System.out.println("we have a match!");
+
+       if(!theList.equals(dangerAlert)) {
+            //Assert.assertTrue(theList.equals(dangerAlert));
+            System.out.println("We have a match!");
         }else{
-            System.out.println("No match! Need to reset password!");
-        }
-/*        if(dangerAlert.equals(expectedAlertList)){
-            System.out.println("match!!!");
-        }else {
-            WebElement element = driver.findElement(By.xpath("//div[@class='account-message-card']//h2[contains(text(),'Account Locked')]"));
-            String acctLock = element.getText();
+           delayFor(5000);
+            WebElement element = driver.findElement(By.xpath("//h2[@class='account-message-card__title'][text()='Account Locked']"));
             highlight(element);
-            assertEquals("Account Locked", acctLock);
+            String acctLockMsg = element.getText();
+            Assert.assertEquals("Account Locked",acctLockMsg);
+            System.out.println("No match! Need to reset password!");
         }*/
 
-/*        assertThat(dangerAlert, anyOf(equalTo("Sorry, this does not match our records. Please try again."),
-                equalTo("We're sorry, your entry does not match our records. Forgot Password?"),
-                equalTo("We're sorry, your entry does not match our records. You have 3 more attempts. Forgot Password?"),
-                equalTo("We're sorry, your entry does not match our records. You have 2 more attempts. Forgot Password?"),
-                equalTo("We're sorry, your entry does not match our records. You have 1 more attempt. Forgot Password?")));
-        //assertThat(dangerAlert, equalTo(expectedAlertMessage));
 
-        if(dangerAlert.equals(expectedAlertMessage)){
-            System.out.println("match!!!");
-        }else {
-            delayFor(5000);
-            WebElement element = driver.findElement(By.xpath("//div[@class='account-message-card']//h2[contains(text(),'Account Locked')]"));
-            String acctLock = element.getText();
-            highlight(element);
-            assertEquals("Account Locked", acctLock);
-            System.out.println("no match");
-    }*/
-}
+/*        Boolean alertIsPresent = driver.findElements(By.xpath("//div[@class='alert alert--danger']")).size() > 0;
+        System.out.println("Was alert msg displayed?: " + alertIsPresent);
+        Assert.assertTrue(alertIsPresent);
+*/
+
+
+
 }
