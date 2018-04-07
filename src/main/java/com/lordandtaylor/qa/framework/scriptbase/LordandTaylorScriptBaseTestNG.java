@@ -2,22 +2,17 @@ package com.lordandtaylor.qa.framework.scriptbase;
 
 import com.lordandtaylor.qa.framework.pages.*;
 import com.lordandtaylor.qa.framework.utils.DriverFactory;
-import com.lordandtaylor.qa.framework.utils.WebElementUtils;
-import org.junit.After;
-import org.junit.Before;
-import org.openqa.selenium.WebDriver;
-import org.junit.runners.Parameterized;
+import org.testng.annotations.*;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author Hema on  3/19/2018
+ * @author Hema on  4/6/2018
+ * This scriptBase class is TestNG
  */
-public class LordandTaylorScriptBaseJUnit extends PageBase{
+public class LordandTaylorScriptBaseTestNG extends PageBase{
 
     protected CheckoutPage checkoutPage;
     protected ExfoliatorsPage exfoliatorsPage;
@@ -28,17 +23,11 @@ public class LordandTaylorScriptBaseJUnit extends PageBase{
     protected ShiseidoProductPage shiseidoProductPage;
     protected SignInPage signInPage;
 
-/*
-    @Parameterized.Parameter() //***Use to run in Jenkins (parallel in cloud)
-    public String browserName = "Chrome";
-*/
+    @BeforeMethod
+    @Parameters({"browserName"})
+    public void beforeMethod(@Optional(value = "chrome") String browserName) throws Exception{
 
-    @Before
-    public void beforeMethod() throws Exception{
-
-      /*  System.out.println("Browser: " + browserName);//used to do Parallel //***Use to run in Jenkins (parallel in cloud)
-        driver = DriverFactory.getInstance(browserName).getDriver(); //used to do Parallel by initaialze and get whatever Driver instance from DriverFactory
-*/
+        driver = DriverFactory.getInstance(browserName).getDriver();
 
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
@@ -60,12 +49,11 @@ public class LordandTaylorScriptBaseJUnit extends PageBase{
         }catch (MalformedURLException ex){
             ex.printStackTrace();
         }
-
     }
 
-    @After
-    public void afterMethod(){
 
+    @AfterMethod
+    public void afterMethod(){
         checkoutPage = null;
         exfoliatorsPage = null;
         homePage = null;
@@ -77,20 +65,5 @@ public class LordandTaylorScriptBaseJUnit extends PageBase{
 
         DriverFactory.getInstance().removeDriver();
     }
-
-/*    public void delayFor(int timeInMili){  //***Use to run in Jenkins (parallel in cloud)
-        //spree.getUtils().delayFor(timeInMili);
-        homePage.delayFor(timeInMili);
-    }
-
-    @Parameterized.Parameters(name = "{index} - Browser - {0}") //This is parameterized method which will open whatever browser you need, but default is chrome.
-    public static Collection<Object[]> browsers(){
-        return Arrays.asList(new Object[][]{
-                {"chrome"}, //note: if you comment any browser, it would just run in the rest that's there.
-                {"firefox"},
-                {"cloud_chrome_64"}, //4.CloudTest-need to put this browser also, that you might want to execute in.
-                //{"cloud_ie_11"} //5.CloudTest-need to put this browser also, that you might want to execute in.
-        });
-    }*/
 
 }

@@ -7,10 +7,12 @@ import org.junit.runners.Parameterized;
 
 /**
  * @author Hema on  3/20/2018
- *Note: To run Jenkins CI, need to change uncomment @RunsWith in this class and uncomment 3 things in LordandTaylorScriptBaseJUnit.java
+ *Note: To run remote and local (using BrowserStack), need to change uncomment @RunsWith in this class and uncomment 3...
+ * ...things in LordandTaylorScriptBaseJUnit.java
+ * This is for sequential (not parallel) Multi-Browser operation
  */
 
-@RunWith(Parameterized.class) //***Use to run in Jenkins (parallel in cloud)
+//@RunWith(Parameterized.class) //***Use to run in Jenkins (parallel in cloud)
 public class LordandTaylorCartTestJUnit extends LordandTaylorScriptBaseJUnit {
 
     @Test
