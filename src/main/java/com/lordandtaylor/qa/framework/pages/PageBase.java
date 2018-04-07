@@ -8,8 +8,6 @@ import org.junit.Assert;
  */
 public class PageBase extends WebElementUtils {
 
-
-
     public void verifyPageTitle(String expectedTitle){ //This method is to verify the title of the webpage. So we can verify all page titles.
         String title = driver.getTitle();
         Assert.assertEquals(expectedTitle,title);

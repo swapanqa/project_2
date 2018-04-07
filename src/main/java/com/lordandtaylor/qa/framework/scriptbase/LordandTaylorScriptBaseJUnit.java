@@ -55,11 +55,14 @@ public class LordandTaylorScriptBaseJUnit extends PageBase{
         shiseidoProductPage = new ShiseidoProductPage();
         signInPage = new SignInPage();
 
-        try{
+        /*try{
             driver.navigate().to(new URL("https://www.lordandtaylor.com/Entry.jsp"));
         }catch (MalformedURLException ex){
             ex.printStackTrace();
-        }
+        }*/
+
+
+        driver.navigate().to("https://www.lordandtaylor.com/Entry.jsp");
 
     }
 

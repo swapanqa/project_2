@@ -28,7 +28,8 @@ public class SignInPage extends PageBase {
     @FindBy(how = How.ID, using = "sign-into-account-password-field")
     private WebElement passwordInputBox;
 
-    @FindBy(how = How.XPATH, using = "//button[@class='hbc-button hbc-button--full hbc-button--primary sign-into-account__submit-button']")
+    //@FindBy(how = How.XPATH, using = "//button[@class='hbc-button hbc-button--full hbc-button--primary sign-into-account__submit-button']")
+    @FindBy(how = How.XPATH, using = "//div[@class='sign-into-account__button']")
     private WebElement signInButton;   //button[contains(@class,'sign-into-account__submit-button')]
 
     @FindBy(how = How.XPATH,using = "//h1[@class='account-header__greeting']")
@@ -49,7 +50,6 @@ public class SignInPage extends PageBase {
     @FindBy(how = How.XPATH, using = "//div[@class='alert alert--danger']")
     private WebElement alertMsg;
 
-
     public SignInPage(){
         PageFactory.initElements(driver, this);
     }
@@ -68,6 +68,7 @@ public class SignInPage extends PageBase {
 
     public void clickSignIn(){
         highlight(signInButton);
+        delayFor(3000);
         signInButton.click();
     }
 
