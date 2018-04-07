@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>LordAndTaylor</td>
+              <td>1</td>
+            <td>07 Apr 2018, 12:48</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Duration</th>
+            <th>Average</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">AccountPageSteps.account_page_should_display_greeting_message()</td>
+              <td>1</td>
+              <td class="duration" data-value="3903838300">3s 903ms</td>
+              <td class="duration" data-value="3903838300">3s 903ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AccountPageSteps.passworderror_should_display_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="888068500">888ms</td>
+              <td class="duration" data-value="888068500">888ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AccountPageSteps.user_click_SignOut_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">000ms</td>
+              <td class="duration" data-value="0">000ms</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">ApplicationSteps.as_a_non_validated_user()</td>
+              <td>1</td>
+              <td class="duration" data-value="57102300">057ms</td>
+              <td class="duration" data-value="57102300">057ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">ApplicationSteps.lordandtaylor_home_page_should_display()</td>
+              <td>2</td>
+              <td class="duration" data-value="23868500">023ms</td>
+              <td class="duration" data-value="11934250">011ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">ApplicationSteps.user_close_emailPopUp_button()</td>
+              <td>2</td>
+              <td class="duration" data-value="2140227500">2s 140ms</td>
+              <td class="duration" data-value="1070113750">1s 070ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">ApplicationSteps.user_navigate_Beauty_department_to_Exfoliators_category()</td>
+              <td>1</td>
+              <td class="duration" data-value="5048656200">5s 048ms</td>
+              <td class="duration" data-value="5048656200">5s 048ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">ApplicationSteps.user_navigate_to_site()</td>
+              <td>2</td>
+              <td class="duration" data-value="10277428100">10s 277ms</td>
+              <td class="duration" data-value="5138714050">5s 138ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BagPageSteps.bagpage_should_display()</td>
+              <td>1</td>
+              <td class="duration" data-value="951232200">951ms</td>
+              <td class="duration" data-value="951232200">951ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BagPageSteps.user_verify_estimatedTotal_on_LancomeBagPage_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">000ms</td>
+              <td class="duration" data-value="0">000ms</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BagPageSteps.user_verify_product_name_on_LancomeBagPage_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">000ms</td>
+              <td class="duration" data-value="0">000ms</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BagPageSteps.user_verify_subTotal_on_LancomeBagPage_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">000ms</td>
+              <td class="duration" data-value="0">000ms</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BagPageSteps.user_verify_totalItems_on_LancomeBagPage_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="917806600">917ms</td>
+              <td class="duration" data-value="917806600">917ms</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BeforeAfterHook.setUp()</td>
+              <td>2</td>
+              <td class="duration" data-value="8691919500">8s 691ms</td>
+              <td class="duration" data-value="4345959750">4s 345ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BeforeAfterHook.tearDown()</td>
+              <td>2</td>
+              <td class="duration" data-value="1308613600">1s 308ms</td>
+              <td class="duration" data-value="654306800">654ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CategoryPageSteps.exfoliators_page_should_display()</td>
+              <td>1</td>
+              <td class="duration" data-value="1027680700">1s 027ms</td>
+              <td class="duration" data-value="1027680700">1s 027ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CategoryPageSteps.user_click_on_Lancome_exfoliator_product()</td>
+              <td>1</td>
+              <td class="duration" data-value="7202284200">7s 202ms</td>
+              <td class="duration" data-value="7202284200">7s 202ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CheckoutPageSteps.checkout_page_should_display_Lancome_products()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">000ms</td>
+              <td class="duration" data-value="0">000ms</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CheckoutPageSteps.user_verify_itemTotal_on_LancomeCheckoutPage_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">000ms</td>
+              <td class="duration" data-value="0">000ms</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CheckoutPageSteps.user_verify_orderTotal_on_LancomeCheckoutPage_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">000ms</td>
+              <td class="duration" data-value="0">000ms</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CheckoutPageSteps.user_verify_product_name_on_LancomeCheckoutPage_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">000ms</td>
+              <td class="duration" data-value="0">000ms</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CheckoutPageSteps.user_verify_product_quantity_on_LancomeCheckoutPage_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">000ms</td>
+              <td class="duration" data-value="0">000ms</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CheckoutPageSteps.user_verify_shipping_on_LancomeCheckoutPage_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">000ms</td>
+              <td class="duration" data-value="0">000ms</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CheckoutPageSteps.user_verify_verify_tax_on_LancomeCheckoutPage_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">000ms</td>
+              <td class="duration" data-value="0">000ms</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LancomeProdPageSteps.lancome_product_page_should_display()</td>
+              <td>1</td>
+              <td class="duration" data-value="1017516100">1s 017ms</td>
+              <td class="duration" data-value="1017516100">1s 017ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LancomeProdPageSteps.user_select_Lancome_product_quantity_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1901280100">1s 901ms</td>
+              <td class="duration" data-value="1901280100">1s 901ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LancomeProdPageSteps.user_select_Lancome_product_size_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1052935500">1s 052ms</td>
+              <td class="duration" data-value="1052935500">1s 052ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LancomeProdPageSteps.user_select_Lancome_shipIt_option()</td>
+              <td>1</td>
+              <td class="duration" data-value="1068129500">1s 068ms</td>
+              <td class="duration" data-value="1068129500">1s 068ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SignInSteps.browser_should_display_SignIn_page()</td>
+              <td>2</td>
+              <td class="duration" data-value="1884960300">1s 884ms</td>
+              <td class="duration" data-value="942480150">942ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SignInSteps.user_click_SignIn_button()</td>
+              <td>2</td>
+              <td class="duration" data-value="13688641400">13s 688ms</td>
+              <td class="duration" data-value="6844320700">6s 844ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SignInSteps.user_click_SignIn_link()</td>
+              <td>2</td>
+              <td class="duration" data-value="10818434000">10s 818ms</td>
+              <td class="duration" data-value="5409217000">5s 409ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SignInSteps.user_enter_email_as(String)</td>
+              <td>2</td>
+              <td class="duration" data-value="2193851900">2s 193ms</td>
+              <td class="duration" data-value="1096925950">1s 096ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SignInSteps.user_enter_password_as(String)</td>
+              <td>2</td>
+              <td class="duration" data-value="1963082300">1s 963ms</td>
+              <td class="duration" data-value="981541150">981ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SimilarButtonsSteps.user_click_addToBag_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="143436600">143ms</td>
+              <td class="duration" data-value="143436600">143ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SimilarButtonsSteps.user_click_checkout_button_on_bagPage()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">000ms</td>
+              <td class="duration" data-value="0">000ms</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SimilarButtonsSteps.user_click_viewMyBagAndCheckOut()</td>
+              <td>1</td>
+              <td class="duration" data-value="8274470100">8s 274ms</td>
+              <td class="duration" data-value="8274470100">8s 274ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>36</td>
+            <td>46</td>
+            <td class="duration">1m 26s 445ms</td>
+            <td class="duration">1s 879ms</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

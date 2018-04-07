@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="86.445464">
+<testcase classname="LordAndTaylor shipping promotion functionality" name="1. Free shipping OVER $49 purchase from Beauty" time="59.043849">
+<failure message="org.junit.ComparisonFailure: expected:&lt;Items ([2])&gt; but was:&lt;Items ([4])&gt;&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:115)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:144)&#13;&#10;&#9;at com.lordandtaylor.qa.framework.pages.ViewBagPage.verifyTotalItemsInBag(ViewBagPage.java:58)&#13;&#10;&#9;at com.lordandtaylor.qa.framework.steps.BagPageSteps.user_verify_totalItems_on_LancomeBagPage_as(BagPageSteps.java:20)&#13;&#10;&#9;at ✽.When User verify totalItems on LancomeBagPage as &quot;Items (2)&quot;(src/test/resources/features/LordAndTaylorShipPromo.feature:30)&#13;&#10;"><![CDATA[When User navigate to site..................................................passed
+When User close emailPopUp button...........................................passed
+Then LordAndTaylor home page should display.................................passed
+When User click SignIn link.................................................passed
+Then Browser should display SignIn page.....................................passed
+When User enter email as "hema_ahmad@yahoo.com".............................passed
+And User enter password as "Hema&123".......................................passed
+And User click SignIn button................................................passed
+Then Account page should display greeting message...........................passed
+When User navigate Beauty department to Exfoliators category................passed
+Then Exfoliators page should display........................................passed
+When User click on Lancome exfoliator product...............................passed
+Then Lancome product page should display....................................passed
+When User select Lancome product size as "3.4 OZ."..........................passed
+And User select Lancome product quantity as "2".............................passed
+And User select Lancome shipIt option.......................................passed
+And User click addToBag button..............................................passed
+And User click viewMyBagAndCheckOut.........................................passed
+Then BagPage should display.................................................passed
+When User verify totalItems on LancomeBagPage as "Items (2)"................failed
+And User verify product name on LancomeBagPage as "Comforting Exfoliating Cream/3.4 oz.".skipped
+And User verify subTotal on LancomeBagPage as "$52.00"......................skipped
+And User verify estimatedTotal on LancomeBagPage as "$61.95"................skipped
+And User click checkout button on bagPage...................................skipped
+Then Checkout page should display Lancome products..........................skipped
+When User verify product name on LancomeCheckoutPage as "Comforting Exfoliating Cream/3.4 oz.".skipped
+And User verify product quantity on LancomeCheckoutPage as "2"..............skipped
+And User verify itemTotal on LancomeCheckoutPage as "$52.00"................skipped
+And User verify shipping on LancomeCheckoutPage as "FREE"...................skipped
+And User verify verify tax on LancomeCheckoutPage as "$0.00"................skipped
+And User verify orderTotal on LancomeCheckoutPage as "$52.00"...............skipped
+And User click SignOut button...............................................skipped
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<Items ([2])> but was:<Items ([4])>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.lordandtaylor.qa.framework.pages.ViewBagPage.verifyTotalItemsInBag(ViewBagPage.java:58)
+	at com.lordandtaylor.qa.framework.steps.BagPageSteps.user_verify_totalItems_on_LancomeBagPage_as(BagPageSteps.java:20)
+	at ✽.When User verify totalItems on LancomeBagPage as "Items (2)"(src/test/resources/features/LordAndTaylorShipPromo.feature:30)
+]]></failure>
+</testcase>
+<testcase classname="LordAndTaylor SignIn Functionality" name="3. Valid email and invalid password" time="27.401615">
+<system-out><![CDATA[Given As a non-validated user...............................................passed
+When User navigate to site..................................................passed
+When User close emailPopUp button...........................................passed
+Then LordAndTaylor home page should display.................................passed
+When User click SignIn link.................................................passed
+Then Browser should display SignIn page.....................................passed
+When User enter email as "hema_ahmad@yahoo.com".............................passed
+And User enter password as ""...............................................passed
+And User click SignIn button................................................passed
+Then PasswordError should display as "This field is required."..............passed
+]]></system-out>
+</testcase>
+</testsuite>

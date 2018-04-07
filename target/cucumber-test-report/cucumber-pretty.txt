@@ -1,0 +1,74 @@
+#This is Lord&Taylor promotional shipping requirements for customers.Feature:
+Feature: LordAndTaylor shipping promotion functionality
+
+  Background:                                         [90m# src/test/resources/features/LordAndTaylorShipPromo.feature:5[0m
+    Given: As a validated user
+
+    [32mWhen [0m[32mUser navigate to site[0m                        [90m# ApplicationSteps.user_navigate_to_site()[0m
+    [32mWhen [0m[32mUser close emailPopUp button[0m                 [90m# ApplicationSteps.user_close_emailPopUp_button()[0m
+    [32mThen [0m[32mLordAndTaylor home page should display[0m       [90m# ApplicationSteps.lordandtaylor_home_page_should_display()[0m
+    [32mWhen [0m[32mUser click SignIn link[0m                       [90m# SignInSteps.user_click_SignIn_link()[0m
+    [32mThen [0m[32mBrowser should display SignIn page[0m           [90m# SignInSteps.browser_should_display_SignIn_page()[0m
+    [32mWhen [0m[32mUser enter email as "[0m[32m[1mhema_ahmad@yahoo.com[0m[32m"[0m   [90m# SignInSteps.user_enter_email_as(String)[0m
+    [32mAnd [0m[32mUser enter password as "[0m[32m[1mHema&123[0m[32m"[0m             [90m# SignInSteps.user_enter_password_as(String)[0m
+    [32mAnd [0m[32mUser click SignIn button[0m                      [90m# SignInSteps.user_click_SignIn_button()[0m
+    [32mThen [0m[32mAccount page should display greeting message[0m [90m# AccountPageSteps.account_page_should_display_greeting_message()[0m
+
+  @smoke @functional
+  Scenario: 1. Free shipping OVER $49 purchase from Beauty                                         [90m# src/test/resources/features/LordAndTaylorShipPromo.feature:19[0m
+    [32mWhen [0m[32mUser navigate Beauty department to Exfoliators category[0m                                   [90m# ApplicationSteps.user_navigate_Beauty_department_to_Exfoliators_category()[0m
+    [32mThen [0m[32mExfoliators page should display[0m                                                           [90m# CategoryPageSteps.exfoliators_page_should_display()[0m
+    [32mWhen [0m[32mUser click on Lancome exfoliator product[0m                                                  [90m# CategoryPageSteps.user_click_on_Lancome_exfoliator_product()[0m
+    [32mThen [0m[32mLancome product page should display[0m                                                       [90m# LancomeProdPageSteps.lancome_product_page_should_display()[0m
+    [32mWhen [0m[32mUser select Lancome product size as "[0m[32m[1m3.4 OZ.[0m[32m"[0m                                             [90m# LancomeProdPageSteps.user_select_Lancome_product_size_as(String)[0m
+    [32mAnd [0m[32mUser select Lancome product quantity as "[0m[32m[1m2[0m[32m"[0m                                                [90m# LancomeProdPageSteps.user_select_Lancome_product_quantity_as(String)[0m
+    [32mAnd [0m[32mUser select Lancome shipIt option[0m                                                          [90m# LancomeProdPageSteps.user_select_Lancome_shipIt_option()[0m
+    [32mAnd [0m[32mUser click addToBag button[0m                                                                 [90m# SimilarButtonsSteps.user_click_addToBag_button()[0m
+    [32mAnd [0m[32mUser click viewMyBagAndCheckOut[0m                                                            [90m# SimilarButtonsSteps.user_click_viewMyBagAndCheckOut()[0m
+    [32mThen [0m[32mBagPage should display[0m                                                                    [90m# BagPageSteps.bagpage_should_display()[0m
+    [31mWhen [0m[31mUser verify totalItems on LancomeBagPage as "[0m[31m[1mItems (2)[0m[31m"[0m                                   [90m# BagPageSteps.user_verify_totalItems_on_LancomeBagPage_as(String)[0m
+      [31morg.junit.ComparisonFailure: expected:<Items ([2])> but was:<Items ([4])>
+      	at org.junit.Assert.assertEquals(Assert.java:115)
+      	at org.junit.Assert.assertEquals(Assert.java:144)
+      	at com.lordandtaylor.qa.framework.pages.ViewBagPage.verifyTotalItemsInBag(ViewBagPage.java:58)
+      	at com.lordandtaylor.qa.framework.steps.BagPageSteps.user_verify_totalItems_on_LancomeBagPage_as(BagPageSteps.java:20)
+      	at ✽.When User verify totalItems on LancomeBagPage as "Items (2)"(src/test/resources/features/LordAndTaylorShipPromo.feature:30)
+      [0m
+    [36mAnd [0m[36mUser verify product name on LancomeBagPage as "[0m[36m[1mComforting Exfoliating Cream/3.4 oz.[0m[36m"[0m       [90m# BagPageSteps.user_verify_product_name_on_LancomeBagPage_as(String)[0m
+    [36mAnd [0m[36mUser verify subTotal on LancomeBagPage as "[0m[36m[1m$52.00[0m[36m"[0m                                         [90m# BagPageSteps.user_verify_subTotal_on_LancomeBagPage_as(String)[0m
+    [36mAnd [0m[36mUser verify estimatedTotal on LancomeBagPage as "[0m[36m[1m$61.95[0m[36m"[0m                                   [90m# BagPageSteps.user_verify_estimatedTotal_on_LancomeBagPage_as(String)[0m
+    [36mAnd [0m[36mUser click checkout button on bagPage[0m                                                      [90m# SimilarButtonsSteps.user_click_checkout_button_on_bagPage()[0m
+    [36mThen [0m[36mCheckout page should display Lancome products[0m                                             [90m# CheckoutPageSteps.checkout_page_should_display_Lancome_products()[0m
+    [36mWhen [0m[36mUser verify product name on LancomeCheckoutPage as "[0m[36m[1mComforting Exfoliating Cream/3.4 oz.[0m[36m"[0m [90m# CheckoutPageSteps.user_verify_product_name_on_LancomeCheckoutPage_as(String)[0m
+    [36mAnd [0m[36mUser verify product quantity on LancomeCheckoutPage as "[0m[36m[1m2[0m[36m"[0m                                 [90m# CheckoutPageSteps.user_verify_product_quantity_on_LancomeCheckoutPage_as(String)[0m
+    [36mAnd [0m[36mUser verify itemTotal on LancomeCheckoutPage as "[0m[36m[1m$52.00[0m[36m"[0m                                   [90m# CheckoutPageSteps.user_verify_itemTotal_on_LancomeCheckoutPage_as(String)[0m
+    [36mAnd [0m[36mUser verify shipping on LancomeCheckoutPage as "[0m[36m[1mFREE[0m[36m"[0m                                      [90m# CheckoutPageSteps.user_verify_shipping_on_LancomeCheckoutPage_as(String)[0m
+    [36mAnd [0m[36mUser verify verify tax on LancomeCheckoutPage as "[0m[36m[1m$0.00[0m[36m"[0m                                   [90m# CheckoutPageSteps.user_verify_verify_tax_on_LancomeCheckoutPage_as(String)[0m
+    [36mAnd [0m[36mUser verify orderTotal on LancomeCheckoutPage as "[0m[36m[1m$52.00[0m[36m"[0m                                  [90m# CheckoutPageSteps.user_verify_orderTotal_on_LancomeCheckoutPage_as(String)[0m
+    [36mAnd [0m[36mUser click SignOut button[0m                                                                  [90m# AccountPageSteps.user_click_SignOut_button()[0m
+#This is Lord&Taylor Sign In functionality:
+Feature: LordAndTaylor SignIn Functionality
+
+  @smoke @functional
+  Scenario Outline: 3. Valid email and invalid password   [90m# src/test/resources/features/LordAndTaylorSignIn.feature:36[0m
+    [36mWhen [0m[36mUser enter email as "<Email>"[0m
+    [36mAnd [0m[36mUser enter password as "<Password>"[0m
+    [36mAnd [0m[36mUser click SignIn button[0m
+    [36mThen [0m[36mPasswordError should display as "<ErrorMessage>"[0m
+
+    Examples: 
+
+  Background:                                   [90m# src/test/resources/features/LordAndTaylorSignIn.feature:5[0m
+    [32mGiven [0m[32mAs a non-validated user[0m               [90m# ApplicationSteps.as_a_non_validated_user()[0m
+    [32mWhen [0m[32mUser navigate to site[0m                  [90m# ApplicationSteps.user_navigate_to_site()[0m
+    [32mWhen [0m[32mUser close emailPopUp button[0m           [90m# ApplicationSteps.user_close_emailPopUp_button()[0m
+    [32mThen [0m[32mLordAndTaylor home page should display[0m [90m# ApplicationSteps.lordandtaylor_home_page_should_display()[0m
+    [32mWhen [0m[32mUser click SignIn link[0m                 [90m# SignInSteps.user_click_SignIn_link()[0m
+    [32mThen [0m[32mBrowser should display SignIn page[0m     [90m# SignInSteps.browser_should_display_SignIn_page()[0m
+
+  @smoke @functional
+  Scenario Outline: 3. Valid email and invalid password            [90m# src/test/resources/features/LordAndTaylorSignIn.feature:43[0m
+    [32mWhen [0m[32mUser enter email as "[0m[32m[1mhema_ahmad@yahoo.com[0m[32m"[0m                [90m# SignInSteps.user_enter_email_as(String)[0m
+    [32mAnd [0m[32mUser enter password as "[0m[32m[1m[0m[32m"[0m                                  [90m# SignInSteps.user_enter_password_as(String)[0m
+    [32mAnd [0m[32mUser click SignIn button[0m                                   [90m# SignInSteps.user_click_SignIn_button()[0m
+    [32mThen [0m[32mPasswordError should display as "[0m[32m[1mThis field is required.[0m[32m"[0m [90m# AccountPageSteps.passworderror_should_display_as(String)[0m

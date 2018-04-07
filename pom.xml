@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.shiftedtech</groupId>
-    <artifactId>BDDSeleniumReference</artifactId>
+    <groupId>com.lordandtaylor</groupId>
+    <artifactId>LordAndTaylor</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -105,11 +105,11 @@
                 <version>2.20.1</version>
                 <configuration>
                     <!-- JUnit Cucumber Runner -->
-                    <!--
+
                     <includes>
                         <include>**/BDDRunnerJUnit.java</include>
                     </includes>
-                    -->
+
 
                     <!-- JUnit  Runner -->
                     <!--
@@ -135,9 +135,9 @@
 
                     <!-- TestNG suite runner from command line -->
 
-                    <suiteXmlFiles>
-                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
-                    </suiteXmlFiles>
+                    <!--<suiteXmlFiles>-->
+                        <!--<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>-->
+                    <!--</suiteXmlFiles>-->
 
 
                 </configuration>
@@ -154,7 +154,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>BDDSeleniumReference</projectName>  <!-- Replace with project name -->
+                            <projectName>LordAndTaylor</projectName>  <!-- Replace with project name -->
                             <outputDirectory>target/cucumber-test-report/advanced-reports</outputDirectory>
                             <cucumberOutput>target/cucumber-test-report/cucumber-report.json</cucumberOutput>
                             <buildNumber>1</buildNumber>
