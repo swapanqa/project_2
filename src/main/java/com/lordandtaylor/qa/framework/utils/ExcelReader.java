@@ -242,6 +242,7 @@ public class ExcelReader {
         }
         return data;
     }
+
     /**
      * Helper method to get the data based on the value type from cell
      * @param cell
@@ -274,6 +275,4 @@ public class ExcelReader {
         }
         return result;
     }
-
-
 }

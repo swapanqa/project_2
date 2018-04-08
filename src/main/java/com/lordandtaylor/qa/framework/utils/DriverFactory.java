@@ -43,6 +43,12 @@ public class DriverFactory {
         if(instance == null){
             instance = new DriverFactory();
         }
+/*
+
+        FirefoxDriverManager.getInstance().setup(); //get instance of specific FireFox browser,default will be chrome if not specified, because of code just below.
+        ChromeDriverManager.getInstance().setup(); //get instance of specific Chrome browser, ,default will be chrome if not specified, because of code just below.
+*/
+
 
         if(browserName.equalsIgnoreCase("chrome")){
             ChromeDriverManager.getInstance().setup();
@@ -98,7 +104,7 @@ public class DriverFactory {
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             }
-        }else if(browserName.equalsIgnoreCase("grid_chrome_16")){
+        }/*else if(browserName.equalsIgnoreCase("grid_chrome_16")){
             DesiredCapabilities caps = new DesiredCapabilities();
             caps.setPlatform(Platform.ANY);
             caps.setBrowserName("chrome");
@@ -127,19 +133,19 @@ public class DriverFactory {
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             }
-        }
+        }*/
         return instance;
     }
-
-    ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>() // thread local driver object for webdriver
+    ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>()
     {
         @Override
-        protected WebDriver initialValue()
+        protected WebDriver initialValue() // Create temporary instance of class and override initialValue protected method.
         {
-            ChromeDriverManager.getInstance().setup();
-            return new ChromeDriver();
+            ChromeDriverManager.getInstance().setup(); //To override this method, everytime WebDriver instance is made...
+            return new ChromeDriver(); // ...a ChromeDriver instance is created and stored in datastructure for that instance.
         }
     };
+
     public WebDriver getDriver() // call this method to get the driver object and launch the browser
     {
         return driver.get();

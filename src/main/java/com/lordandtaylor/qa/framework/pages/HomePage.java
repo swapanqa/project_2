@@ -71,6 +71,7 @@ public class HomePage extends PageBase{
     }
 
     public void openExfoliatorsPage(){
+        delayFor(5000);
         highlight(beauty);
         Actions actions = new Actions(driver);
         actions.moveToElement(beauty).perform();

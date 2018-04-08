@@ -10,8 +10,8 @@ import org.junit.runner.RunWith;
 
     @RunWith(Cucumber.class)
     @CucumberOptions(
-            //tags = { "@functional" },  /*only run tests tagged with whatever in curly braces, 1Dym array*/
-            tags = { "@smoke" },         /* smoke test only, 1 Dym array */
+            tags = { "@functional" },  /*only run tests tagged with whatever in curly braces, 1Dym array*/
+            //tags = { "@smoke" },         /* smoke test only, 1 Dym array */
             // tags = { "@smoke,@debug" },   /* debug OR smoke test, note: 2 Dym array */
             //tags = { "@smoke","@debug" },  /* debug AND smoke test, note: 2 Dym array */
             //monochrome = true,

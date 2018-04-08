@@ -24,11 +24,11 @@ public class LordandTaylorScriptBaseTestNG extends PageBase{
     protected SignInPage signInPage;
 
     @BeforeMethod
-    //@Parameters({"browserName"})
-    //public void beforeMethod(@Optional(value = "chrome") String browserName) throws Exception{
-    public void beforeMethod(){
-        //driver = DriverFactory.getInstance(browserName).getDriver();
-        driver = DriverFactory.getInstance().getDriver();
+    @Parameters("browserName") //needed to run testNG script in remote
+    public void beforeMethod(@Optional(value = "chrome") String browserName) throws Exception{ //needed to run testNG script in remote
+    //public void beforeMethod(){
+        driver = DriverFactory.getInstance(browserName).getDriver();
+        //driver = DriverFactory.getInstance().getDriver();
 
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();

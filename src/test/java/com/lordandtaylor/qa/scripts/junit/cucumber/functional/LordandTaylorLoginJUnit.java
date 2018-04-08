@@ -1,6 +1,5 @@
 package com.lordandtaylor.qa.scripts.junit.cucumber.functional;
 
-import com.lordandtaylor.qa.framework.pages.HomePage;
 import com.lordandtaylor.qa.framework.scriptbase.LordandTaylorScriptBaseJUnit;
 import com.lordandtaylor.qa.framework.utils.ExcelReader;
 import com.tngtech.java.junit.dataprovider.DataProvider;
@@ -32,10 +31,9 @@ public class LordandTaylorLoginJUnit extends LordandTaylorScriptBaseJUnit {
     }
 
     @DataProvider
-    public static Object[][] loginDataProviderAsExcelWithPOI() {
+    public static Object[][] loginDataProviderAsExcelWithPOI(){
         Object[][] data = null;
         String dataFile = System.getProperty("user.dir") + "/src/test/resources/LordandTaylorLoginData.xls";
-
 
         ExcelReader reader = new ExcelReader(dataFile);
         data = reader.getExcelSheetData("Sheet1",true);

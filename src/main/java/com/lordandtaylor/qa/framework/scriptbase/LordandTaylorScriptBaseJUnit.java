@@ -28,17 +28,14 @@ public class LordandTaylorScriptBaseJUnit extends PageBase{
     protected ShiseidoProductPage shiseidoProductPage;
     protected SignInPage signInPage;
 
-/*
     @Parameterized.Parameter() //***Use to run in Jenkins (parallel in cloud)
-    public String browserName = "Chrome";
-*/
+    public String browserName = "chrome";
 
     @Before
-    public void beforeMethod() throws Exception{
+    public void beforeMethod(){
 
-      /*  System.out.println("Browser: " + browserName);//used to do Parallel //***Use to run in Jenkins (parallel in cloud)
+        System.out.println("Browser: " + browserName);//used to do Parallel //***Use to run in Jenkins (parallel in cloud)
         driver = DriverFactory.getInstance(browserName).getDriver(); //used to do Parallel by initaialze and get whatever Driver instance from DriverFactory
-*/
 
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
@@ -55,14 +52,14 @@ public class LordandTaylorScriptBaseJUnit extends PageBase{
         shiseidoProductPage = new ShiseidoProductPage();
         signInPage = new SignInPage();
 
-        /*try{
+        driver.navigate().to("https://www.lordandtaylor.com/Entry.jsp");
+/*
+        try{
             driver.navigate().to(new URL("https://www.lordandtaylor.com/Entry.jsp"));
         }catch (MalformedURLException ex){
             ex.printStackTrace();
-        }*/
-
-
-        driver.navigate().to("https://www.lordandtaylor.com/Entry.jsp");
+        }
+*/
 
     }
 
@@ -81,19 +78,19 @@ public class LordandTaylorScriptBaseJUnit extends PageBase{
         DriverFactory.getInstance().removeDriver();
     }
 
-/*    public void delayFor(int timeInMili){  //***Use to run in Jenkins (parallel in cloud)
-        //spree.getUtils().delayFor(timeInMili);
+    public void delayFor(int timeInMili){
         homePage.delayFor(timeInMili);
     }
 
+    //***Use to run in Jenkins (parallel in cloud)
     @Parameterized.Parameters(name = "{index} - Browser - {0}") //This is parameterized method which will open whatever browser you need, but default is chrome.
     public static Collection<Object[]> browsers(){
         return Arrays.asList(new Object[][]{
-                {"chrome"}, //note: if you comment any browser, it would just run in the rest that's there.
-                {"firefox"},
+                //{"chrome"}, //note: if you comment any browser, it would just run in the rest that's there.
+                //{"firefox"},
                 {"cloud_chrome_64"}, //4.CloudTest-need to put this browser also, that you might want to execute in.
                 //{"cloud_ie_11"} //5.CloudTest-need to put this browser also, that you might want to execute in.
         });
-    }*/
+    }
 
 }
