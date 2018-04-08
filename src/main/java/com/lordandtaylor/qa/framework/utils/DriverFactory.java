@@ -114,9 +114,9 @@ public class DriverFactory  {
         @Override
         protected WebDriver initialValue()
         {
-/*            ChromeDriverManager.getInstance().setup();
-            return new ChromeDriver();*/
-            return null;
+            ChromeDriverManager.getInstance().setup();
+            return new ChromeDriver();
+            //return null;
         }
     };
     public WebDriver getDriver() // call this method to get the driver object and launch the browser

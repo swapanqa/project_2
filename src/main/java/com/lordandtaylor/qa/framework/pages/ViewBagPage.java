@@ -35,18 +35,16 @@ public class ViewBagPage extends PageBase {
     @FindBy(how = How.XPATH, using = "//dd[@id='jsVal-grandTotal']")
     private WebElement estimatedTotal;
 
-    @FindBy(how = How.XPATH, using = "//a[@id='jsStartCheckout'][contains(text(),'Checkout')]")
+    @FindBy(how = How.XPATH, using = "//a[@id='jsEnterCheckout'][contains(text(),'Checkout')]")
     private WebElement checkOutButton;
 
     @FindBy(how = How.ID, using = "jsCheckoutRemediationGuestCheckout")
     private WebElement checkoutAsGuest;
 
 
-/*
     public ViewBagPage(){
         PageFactory.initElements(driver, this);
     }
-*/
 
     public void verifyBagPage(){
         highlight(bagPage);
@@ -60,7 +58,7 @@ public class ViewBagPage extends PageBase {
         Assert.assertEquals(expectedTotalItems, text);
     }
 
-    public void verifyProductBrand(String expectedBrand){ //need to figure out circumflex (caret over o).
+    public void verifyProductBrand(String expectedBrand){
         highlight(productBrand);
         String text = productBrand.getText();
         Assert.assertEquals(expectedBrand, text);
@@ -97,7 +95,7 @@ public class ViewBagPage extends PageBase {
     }
 
     public void clickCheckoutButton(){
-        highlight(checkOutButton);
+        highlight(checkOutButton); //***note: sometimes this button works, other times not. Xpath is correctly identified.
         checkOutButton.click();
     }
 

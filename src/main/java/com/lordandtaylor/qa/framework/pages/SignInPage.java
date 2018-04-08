@@ -50,9 +50,9 @@ public class SignInPage extends PageBase {
     @FindBy(how = How.XPATH, using = "//div[@class='alert alert--danger']")
     private WebElement alertMsg;
 
-/*    public SignInPage(){
+    public SignInPage(){
         PageFactory.initElements(driver, this);
-    }*/
+    }
 
     public void clickSignInLink(){
         highlight(signInLink);
@@ -67,7 +67,7 @@ public class SignInPage extends PageBase {
     }
 
     public void clickSignIn(){
-        highlight(signInButton);
+        highlight(signInButton); //***note: sometimes this button does not work, but xpath is correct.
         delayFor(3000);
         signInButton.click();
     }

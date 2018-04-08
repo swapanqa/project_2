@@ -13,7 +13,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 5988208600,
+  "duration": 5979006200,
   "status": "passed"
 });
 formatter.background({
@@ -72,35 +72,35 @@ formatter.match({
   "location": "ApplicationSteps.user_navigate_to_site()"
 });
 formatter.result({
-  "duration": 6503638000,
+  "duration": 5965529400,
   "status": "passed"
 });
 formatter.match({
   "location": "ApplicationSteps.user_close_emailPopUp_button()"
 });
 formatter.result({
-  "duration": 1071196101,
+  "duration": 1054903000,
   "status": "passed"
 });
 formatter.match({
   "location": "ApplicationSteps.lordandtaylor_home_page_should_display()"
 });
 formatter.result({
-  "duration": 11325199,
+  "duration": 14039700,
   "status": "passed"
 });
 formatter.match({
   "location": "SignInSteps.user_click_SignIn_link()"
 });
 formatter.result({
-  "duration": 5487515201,
+  "duration": 6140181400,
   "status": "passed"
 });
 formatter.match({
   "location": "SignInSteps.browser_should_display_SignIn_page()"
 });
 formatter.result({
-  "duration": 887155101,
+  "duration": 879791900,
   "status": "passed"
 });
 formatter.match({
@@ -113,7 +113,7 @@ formatter.match({
   "location": "SignInSteps.user_enter_email_as(String)"
 });
 formatter.result({
-  "duration": 1125891300,
+  "duration": 1124922900,
   "status": "passed"
 });
 formatter.match({
@@ -126,21 +126,21 @@ formatter.match({
   "location": "SignInSteps.user_enter_password_as(String)"
 });
 formatter.result({
-  "duration": 1018840799,
+  "duration": 1053233100,
   "status": "passed"
 });
 formatter.match({
   "location": "SignInSteps.user_click_SignIn_button()"
 });
 formatter.result({
-  "duration": 6937801999,
+  "duration": 6796034400,
   "status": "passed"
 });
 formatter.match({
   "location": "AccountPageSteps.account_page_should_display_greeting_message()"
 });
 formatter.result({
-  "duration": 3913200500,
+  "duration": 3903553800,
   "status": "passed"
 });
 formatter.scenario({
@@ -280,28 +280,28 @@ formatter.match({
   "location": "ApplicationSteps.user_navigate_Beauty_department_to_Exfoliators_category()"
 });
 formatter.result({
-  "duration": 5806761000,
+  "duration": 10245810300,
   "status": "passed"
 });
 formatter.match({
   "location": "CategoryPageSteps.exfoliators_page_should_display()"
 });
 formatter.result({
-  "duration": 952623501,
+  "duration": 1015715200,
   "status": "passed"
 });
 formatter.match({
   "location": "CategoryPageSteps.user_click_on_Lancome_exfoliator_product()"
 });
 formatter.result({
-  "duration": 8884517701,
+  "duration": 8876625500,
   "status": "passed"
 });
 formatter.match({
   "location": "LancomeProdPageSteps.lancome_product_page_should_display()"
 });
 formatter.result({
-  "duration": 1065670600,
+  "duration": 964595700,
   "status": "passed"
 });
 formatter.match({
@@ -314,7 +314,7 @@ formatter.match({
   "location": "LancomeProdPageSteps.user_select_Lancome_product_size_as(String)"
 });
 formatter.result({
-  "duration": 1041317600,
+  "duration": 1056661000,
   "status": "passed"
 });
 formatter.match({
@@ -327,35 +327,35 @@ formatter.match({
   "location": "LancomeProdPageSteps.user_select_Lancome_product_quantity_as(String)"
 });
 formatter.result({
-  "duration": 1944512799,
+  "duration": 1902170200,
   "status": "passed"
 });
 formatter.match({
   "location": "LancomeProdPageSteps.user_select_Lancome_shipIt_option()"
 });
 formatter.result({
-  "duration": 1047396999,
+  "duration": 1006739000,
   "status": "passed"
 });
 formatter.match({
   "location": "SimilarButtonsSteps.user_click_addToBag_button()"
 });
 formatter.result({
-  "duration": 182233300,
+  "duration": 175885200,
   "status": "passed"
 });
 formatter.match({
   "location": "SimilarButtonsSteps.user_click_viewMyBagAndCheckOut()"
 });
 formatter.result({
-  "duration": 8797099699,
+  "duration": 8524339300,
   "status": "passed"
 });
 formatter.match({
   "location": "BagPageSteps.bagpage_should_display()"
 });
 formatter.result({
-  "duration": 1061804400,
+  "duration": 1029829000,
   "status": "passed"
 });
 formatter.match({
@@ -368,7 +368,7 @@ formatter.match({
   "location": "BagPageSteps.user_verify_totalItems_on_LancomeBagPage_as(String)"
 });
 formatter.result({
-  "duration": 933749300,
+  "duration": 939869900,
   "status": "passed"
 });
 formatter.match({
@@ -381,7 +381,7 @@ formatter.match({
   "location": "BagPageSteps.user_verify_product_name_on_LancomeBagPage_as(String)"
 });
 formatter.result({
-  "duration": 934282200,
+  "duration": 949249600,
   "status": "passed"
 });
 formatter.match({
@@ -394,7 +394,7 @@ formatter.match({
   "location": "BagPageSteps.user_verify_subTotal_on_LancomeBagPage_as(String)"
 });
 formatter.result({
-  "duration": 937356501,
+  "duration": 944452900,
   "status": "passed"
 });
 formatter.match({
@@ -407,22 +407,22 @@ formatter.match({
   "location": "BagPageSteps.user_verify_estimatedTotal_on_LancomeBagPage_as(String)"
 });
 formatter.result({
-  "duration": 937504800,
+  "duration": 931085700,
   "status": "passed"
 });
 formatter.match({
   "location": "SimilarButtonsSteps.user_click_checkout_button_on_bagPage()"
 });
 formatter.result({
-  "duration": 38297699,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@id\u003d\u0027jsStartCheckout\u0027][contains(text(),\u0027Checkout\u0027)]\"}\n  (Session info: chrome\u003d65.0.3325.181)\n  (Driver info: chromedriver\u003d2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform\u003dWindows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.9.1\u0027, revision: \u002763f7b50\u0027, time: \u00272018-02-07T22:25:02.294Z\u0027\nSystem info: host: \u0027SHIFT-PC01\u0027, ip: \u0027192.168.0.10\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_151\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\\Users\\SHIFTS~1\\AppData\\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}\nSession ID: f7a436ace32189d4da4cad679436652c\n*** Element info: {Using\u003dxpath, value\u003d//a[@id\u003d\u0027jsStartCheckout\u0027][contains(text(),\u0027Checkout\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy19.getWrappedElement(Unknown Source)\r\n\tat org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)\r\n\tat com.google.common.collect.Iterators$6.transform(Iterators.java:788)\r\n\tat com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)\r\n\tat com.google.common.collect.Iterators.addAll(Iterators.java:358)\r\n\tat com.google.common.collect.Lists.newArrayList(Lists.java:155)\r\n\tat com.google.common.collect.Lists.newArrayList(Lists.java:141)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:535)\r\n\tat com.lordandtaylor.qa.framework.utils.SeleniumUtils.highlight(SeleniumUtils.java:160)\r\n\tat com.lordandtaylor.qa.framework.pages.ViewBagPage.clickCheckoutButton(ViewBagPage.java:98)\r\n\tat com.lordandtaylor.qa.framework.steps.SimilarButtonsSteps.user_click_checkout_button_on_bagPage(SimilarButtonsSteps.java:34)\r\n\tat ✽.And User click checkout button on bagPage(src/test/resources/features/LordAndTaylorShipPromo.feature:34)\r\n",
-  "status": "failed"
+  "duration": 5395201600,
+  "status": "passed"
 });
 formatter.match({
   "location": "CheckoutPageSteps.checkout_page_should_display_Lancome_products()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 895676500,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -434,7 +434,8 @@ formatter.match({
   "location": "CheckoutPageSteps.user_verify_product_name_on_LancomeCheckoutPage_as(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1154920600,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -446,7 +447,8 @@ formatter.match({
   "location": "CheckoutPageSteps.user_verify_product_quantity_on_LancomeCheckoutPage_as(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 917875400,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -458,7 +460,8 @@ formatter.match({
   "location": "CheckoutPageSteps.user_verify_itemTotal_on_LancomeCheckoutPage_as(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 913426700,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -470,7 +473,8 @@ formatter.match({
   "location": "CheckoutPageSteps.user_verify_shipping_on_LancomeCheckoutPage_as(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 906419500,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -482,7 +486,8 @@ formatter.match({
   "location": "CheckoutPageSteps.user_verify_verify_tax_on_LancomeCheckoutPage_as(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 904472500,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -494,20 +499,22 @@ formatter.match({
   "location": "CheckoutPageSteps.user_verify_orderTotal_on_LancomeCheckoutPage_as(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2875936200,
+  "status": "passed"
 });
 formatter.match({
   "location": "AccountPageSteps.user_click_SignOut_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 12667609300,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 823816400,
+  "duration": 693017600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3733079400,
+  "duration": 3710984400,
   "status": "passed"
 });
 formatter.background({
@@ -566,35 +573,35 @@ formatter.match({
   "location": "ApplicationSteps.user_navigate_to_site()"
 });
 formatter.result({
-  "duration": 6344343801,
+  "duration": 5879303100,
   "status": "passed"
 });
 formatter.match({
   "location": "ApplicationSteps.user_close_emailPopUp_button()"
 });
 formatter.result({
-  "duration": 1159165000,
+  "duration": 1041609300,
   "status": "passed"
 });
 formatter.match({
   "location": "ApplicationSteps.lordandtaylor_home_page_should_display()"
 });
 formatter.result({
-  "duration": 13921600,
+  "duration": 8932300,
   "status": "passed"
 });
 formatter.match({
   "location": "SignInSteps.user_click_SignIn_link()"
 });
 formatter.result({
-  "duration": 6075763300,
+  "duration": 6203028300,
   "status": "passed"
 });
 formatter.match({
   "location": "SignInSteps.browser_should_display_SignIn_page()"
 });
 formatter.result({
-  "duration": 881966401,
+  "duration": 871948500,
   "status": "passed"
 });
 formatter.match({
@@ -607,7 +614,7 @@ formatter.match({
   "location": "SignInSteps.user_enter_email_as(String)"
 });
 formatter.result({
-  "duration": 1142403700,
+  "duration": 1229747300,
   "status": "passed"
 });
 formatter.match({
@@ -620,21 +627,21 @@ formatter.match({
   "location": "SignInSteps.user_enter_password_as(String)"
 });
 formatter.result({
-  "duration": 1052982901,
+  "duration": 1004001700,
   "status": "passed"
 });
 formatter.match({
   "location": "SignInSteps.user_click_SignIn_button()"
 });
 formatter.result({
-  "duration": 6792906500,
+  "duration": 6796265700,
   "status": "passed"
 });
 formatter.match({
   "location": "AccountPageSteps.account_page_should_display_greeting_message()"
 });
 formatter.result({
-  "duration": 3881659299,
+  "duration": 3887621300,
   "status": "passed"
 });
 formatter.scenario({
@@ -774,28 +781,28 @@ formatter.match({
   "location": "ApplicationSteps.user_navigate_Beauty_department_to_Eyes_category()"
 });
 formatter.result({
-  "duration": 5530264801,
+  "duration": 6179372900,
   "status": "passed"
 });
 formatter.match({
   "location": "CategoryPageSteps.eyes_page_should_display()"
 });
 formatter.result({
-  "duration": 1016063700,
+  "duration": 935961600,
   "status": "passed"
 });
 formatter.match({
   "location": "CategoryPageSteps.user_click_on_Shiseido_Eye_product()"
 });
 formatter.result({
-  "duration": 11933921000,
+  "duration": 12253325400,
   "status": "passed"
 });
 formatter.match({
   "location": "ShiseidoProdPageSteps.shiseido_product_page_should_display()"
 });
 formatter.result({
-  "duration": 1061199299,
+  "duration": 993507300,
   "status": "passed"
 });
 formatter.match({
@@ -808,7 +815,7 @@ formatter.match({
   "location": "ShiseidoProdPageSteps.user_select_Shiseido_product_color_as(String)"
 });
 formatter.result({
-  "duration": 1005587299,
+  "duration": 1008066800,
   "status": "passed"
 });
 formatter.match({
@@ -821,35 +828,35 @@ formatter.match({
   "location": "ShiseidoProdPageSteps.user_select_Shiseido_product_quantity_as(String)"
 });
 formatter.result({
-  "duration": 1897644800,
+  "duration": 1921445900,
   "status": "passed"
 });
 formatter.match({
   "location": "ShiseidoProdPageSteps.user_select_Shiseido_shipIt_option()"
 });
 formatter.result({
-  "duration": 1004018100,
+  "duration": 1031633700,
   "status": "passed"
 });
 formatter.match({
   "location": "SimilarButtonsSteps.user_click_addToBag_button()"
 });
 formatter.result({
-  "duration": 168236900,
+  "duration": 140491500,
   "status": "passed"
 });
 formatter.match({
   "location": "SimilarButtonsSteps.user_click_viewMyBagAndCheckOut()"
 });
 formatter.result({
-  "duration": 8350955899,
+  "duration": 9277792600,
   "status": "passed"
 });
 formatter.match({
   "location": "BagPageSteps.bag_page_should_display()"
 });
 formatter.result({
-  "duration": 1060931900,
+  "duration": 930862800,
   "status": "passed"
 });
 formatter.match({
@@ -862,9 +869,8 @@ formatter.match({
   "location": "BagPageSteps.user_verify_totalItems_on_ShiseidoBagPage_as(String)"
 });
 formatter.result({
-  "duration": 932221999,
-  "error_message": "org.junit.ComparisonFailure: expected:\u003cItems ([1])\u003e but was:\u003cItems ([3])\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat com.lordandtaylor.qa.framework.pages.ViewBagPage.verifyTotalItemsInBag(ViewBagPage.java:58)\r\n\tat com.lordandtaylor.qa.framework.steps.BagPageSteps.user_verify_totalItems_on_ShiseidoBagPage_as(BagPageSteps.java:47)\r\n\tat ✽.When User verify totalItems on ShiseidoBagPage as \"Items (1)\"(src/test/resources/features/LordAndTaylorShipPromo.feature:57)\r\n",
-  "status": "failed"
+  "duration": 918305600,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -876,7 +882,8 @@ formatter.match({
   "location": "BagPageSteps.user_verify_product_name_on_ShiseidoBagPage_as(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 932086200,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -888,7 +895,8 @@ formatter.match({
   "location": "BagPageSteps.user_verify_subTotal_on_ShiseidoBagPage_as(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 912952900,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -900,19 +908,22 @@ formatter.match({
   "location": "BagPageSteps.user_verify_estimatedTotal_on_ShiseidoBagPage_as(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 932417100,
+  "status": "passed"
 });
 formatter.match({
   "location": "SimilarButtonsSteps.user_click_checkout_button_on_bagPage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5645423100,
+  "status": "passed"
 });
 formatter.match({
   "location": "CheckoutPageSteps.checkout_page_should_display_Shiseido_products()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 924960200,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -924,7 +935,8 @@ formatter.match({
   "location": "CheckoutPageSteps.user_verify_product_name_on_ShiseidoCheckoutPage_as(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 937066300,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -936,7 +948,8 @@ formatter.match({
   "location": "CheckoutPageSteps.user_verify_product_quantity_on_ShiseidoCheckoutPage_as(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 914797000,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -948,7 +961,8 @@ formatter.match({
   "location": "CheckoutPageSteps.user_verify_itemTotal_on_ShiseidoCheckoutPage_as(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 914336200,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -960,7 +974,8 @@ formatter.match({
   "location": "CheckoutPageSteps.user_verify_shipping_on_ShiseidoCheckoutPage_as(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 925673000,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -972,7 +987,8 @@ formatter.match({
   "location": "CheckoutPageSteps.user_verify_verify_tax_on_ShiseidoCheckoutPage_as(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 904150400,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -984,16 +1000,18 @@ formatter.match({
   "location": "CheckoutPageSteps.user_verify_orderTotal_on_ShiseidoCheckoutPage_as(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2833091600,
+  "status": "passed"
 });
 formatter.match({
   "location": "AccountPageSteps.user_click_SignOut_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 12653034200,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 689333600,
+  "duration": 678258100,
   "status": "passed"
 });
 formatter.uri("src/test/resources/features/LordAndTaylorSignIn.feature");
@@ -1011,7 +1029,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 3640360801,
+  "duration": 3639039800,
   "status": "passed"
 });
 formatter.background({
@@ -1055,42 +1073,42 @@ formatter.match({
   "location": "ApplicationSteps.as_a_non_validated_user()"
 });
 formatter.result({
-  "duration": 55802001,
+  "duration": 57568400,
   "status": "passed"
 });
 formatter.match({
   "location": "ApplicationSteps.user_navigate_to_site()"
 });
 formatter.result({
-  "duration": 5625693400,
+  "duration": 5731751500,
   "status": "passed"
 });
 formatter.match({
   "location": "ApplicationSteps.user_close_emailPopUp_button()"
 });
 formatter.result({
-  "duration": 1053867400,
+  "duration": 1072254300,
   "status": "passed"
 });
 formatter.match({
   "location": "ApplicationSteps.lordandtaylor_home_page_should_display()"
 });
 formatter.result({
-  "duration": 15119299,
+  "duration": 13208800,
   "status": "passed"
 });
 formatter.match({
   "location": "SignInSteps.user_click_SignIn_link()"
 });
 formatter.result({
-  "duration": 5363694700,
+  "duration": 7021776300,
   "status": "passed"
 });
 formatter.match({
   "location": "SignInSteps.browser_should_display_SignIn_page()"
 });
 formatter.result({
-  "duration": 875338900,
+  "duration": 904157500,
   "status": "passed"
 });
 formatter.scenario({
@@ -1146,7 +1164,7 @@ formatter.match({
   "location": "SignInSteps.user_enter_email_as(String)"
 });
 formatter.result({
-  "duration": 1103026300,
+  "duration": 1092520100,
   "status": "passed"
 });
 formatter.match({
@@ -1159,32 +1177,32 @@ formatter.match({
   "location": "SignInSteps.user_enter_password_as(String)"
 });
 formatter.result({
-  "duration": 1001071600,
+  "duration": 1100893500,
   "status": "passed"
 });
 formatter.match({
   "location": "SignInSteps.user_click_SignIn_button()"
 });
 formatter.result({
-  "duration": 6829810400,
+  "duration": 6798926100,
   "status": "passed"
 });
 formatter.match({
   "location": "AccountPageSteps.account_page_should_display_greeting_message()"
 });
 formatter.result({
-  "duration": 3883340500,
-  "status": "passed"
+  "duration": 3033282600,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//h1[@class\u003d\u0027account-header__greeting\u0027]\"}\n  (Session info: chrome\u003d65.0.3325.181)\n  (Driver info: chromedriver\u003d2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform\u003dWindows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.9.1\u0027, revision: \u002763f7b50\u0027, time: \u00272018-02-07T22:25:02.294Z\u0027\nSystem info: host: \u0027SHIFT-PC01\u0027, ip: \u0027192.168.0.10\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_151\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\\Users\\SHIFTS~1\\AppData\\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}\nSession ID: 5a7dcdb8dee70880f1fcb3bee4615e75\n*** Element info: {Using\u003dxpath, value\u003d//h1[@class\u003d\u0027account-header__greeting\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\r\n\tat com.lordandtaylor.qa.framework.steps.AccountPageSteps.account_page_should_display_greeting_message(AccountPageSteps.java:34)\r\n\tat ✽.Then Account page should display greeting message(src/test/resources/features/LordAndTaylorSignIn.feature:19)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "AccountPageSteps.user_click_SignOut_button()"
 });
 formatter.result({
-  "duration": 12668581000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "duration": 683420700,
+  "duration": 740961900,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -1262,7 +1280,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 3647315800,
+  "duration": 3675842900,
   "status": "passed"
 });
 formatter.background({
@@ -1306,42 +1324,42 @@ formatter.match({
   "location": "ApplicationSteps.as_a_non_validated_user()"
 });
 formatter.result({
-  "duration": 54103700,
+  "duration": 59577100,
   "status": "passed"
 });
 formatter.match({
   "location": "ApplicationSteps.user_navigate_to_site()"
 });
 formatter.result({
-  "duration": 6012957900,
+  "duration": 5857139700,
   "status": "passed"
 });
 formatter.match({
   "location": "ApplicationSteps.user_close_emailPopUp_button()"
 });
 formatter.result({
-  "duration": 1058383500,
+  "duration": 1068021900,
   "status": "passed"
 });
 formatter.match({
   "location": "ApplicationSteps.lordandtaylor_home_page_should_display()"
 });
 formatter.result({
-  "duration": 10470800,
+  "duration": 6849800,
   "status": "passed"
 });
 formatter.match({
   "location": "SignInSteps.user_click_SignIn_link()"
 });
 formatter.result({
-  "duration": 5461942600,
+  "duration": 5793986900,
   "status": "passed"
 });
 formatter.match({
   "location": "SignInSteps.browser_should_display_SignIn_page()"
 });
 formatter.result({
-  "duration": 898375700,
+  "duration": 894282200,
   "status": "passed"
 });
 formatter.scenario({
@@ -1401,7 +1419,7 @@ formatter.match({
   "location": "SignInSteps.user_enter_email_as(String)"
 });
 formatter.result({
-  "duration": 945030200,
+  "duration": 952283800,
   "status": "passed"
 });
 formatter.match({
@@ -1414,14 +1432,14 @@ formatter.match({
   "location": "SignInSteps.user_enter_password_as(String)"
 });
 formatter.result({
-  "duration": 1066951800,
+  "duration": 1001949200,
   "status": "passed"
 });
 formatter.match({
   "location": "SignInSteps.user_click_SignIn_button()"
 });
 formatter.result({
-  "duration": 6803049500,
+  "duration": 6786766900,
   "status": "passed"
 });
 formatter.match({
@@ -1434,15 +1452,15 @@ formatter.match({
   "location": "AccountPageSteps.emailerror_should_display_as(String)"
 });
 formatter.result({
-  "duration": 892303700,
+  "duration": 892079000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 685915900,
+  "duration": 677232200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3594675100,
+  "duration": 3640951900,
   "status": "passed"
 });
 formatter.background({
@@ -1486,42 +1504,42 @@ formatter.match({
   "location": "ApplicationSteps.as_a_non_validated_user()"
 });
 formatter.result({
-  "duration": 56112000,
+  "duration": 50843800,
   "status": "passed"
 });
 formatter.match({
   "location": "ApplicationSteps.user_navigate_to_site()"
 });
 formatter.result({
-  "duration": 5692563800,
+  "duration": 6115009100,
   "status": "passed"
 });
 formatter.match({
   "location": "ApplicationSteps.user_close_emailPopUp_button()"
 });
 formatter.result({
-  "duration": 1059286200,
+  "duration": 1078286900,
   "status": "passed"
 });
 formatter.match({
   "location": "ApplicationSteps.lordandtaylor_home_page_should_display()"
 });
 formatter.result({
-  "duration": 14351100,
+  "duration": 13054200,
   "status": "passed"
 });
 formatter.match({
   "location": "SignInSteps.user_click_SignIn_link()"
 });
 formatter.result({
-  "duration": 5387432200,
+  "duration": 6147899400,
   "status": "passed"
 });
 formatter.match({
   "location": "SignInSteps.browser_should_display_SignIn_page()"
 });
 formatter.result({
-  "duration": 1006421600,
+  "duration": 862437500,
   "status": "passed"
 });
 formatter.scenario({
@@ -1581,7 +1599,7 @@ formatter.match({
   "location": "SignInSteps.user_enter_email_as(String)"
 });
 formatter.result({
-  "duration": 1055477200,
+  "duration": 1055140000,
   "status": "passed"
 });
 formatter.match({
@@ -1594,14 +1612,14 @@ formatter.match({
   "location": "SignInSteps.user_enter_password_as(String)"
 });
 formatter.result({
-  "duration": 1008020200,
+  "duration": 1047269500,
   "status": "passed"
 });
 formatter.match({
   "location": "SignInSteps.user_click_SignIn_button()"
 });
 formatter.result({
-  "duration": 6768362800,
+  "duration": 6797435500,
   "status": "passed"
 });
 formatter.match({
@@ -1614,11 +1632,11 @@ formatter.match({
   "location": "AccountPageSteps.emailerror_should_display_as(String)"
 });
 formatter.result({
-  "duration": 875856200,
+  "duration": 879778200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 693677100,
+  "duration": 667214500,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -1687,7 +1705,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 3664373400,
+  "duration": 3652368200,
   "status": "passed"
 });
 formatter.background({
@@ -1731,42 +1749,42 @@ formatter.match({
   "location": "ApplicationSteps.as_a_non_validated_user()"
 });
 formatter.result({
-  "duration": 76363700,
+  "duration": 45991500,
   "status": "passed"
 });
 formatter.match({
   "location": "ApplicationSteps.user_navigate_to_site()"
 });
 formatter.result({
-  "duration": 5799899400,
+  "duration": 6649101700,
   "status": "passed"
 });
 formatter.match({
   "location": "ApplicationSteps.user_close_emailPopUp_button()"
 });
 formatter.result({
-  "duration": 1063660000,
+  "duration": 1043330500,
   "status": "passed"
 });
 formatter.match({
   "location": "ApplicationSteps.lordandtaylor_home_page_should_display()"
 });
 formatter.result({
-  "duration": 19173900,
+  "duration": 8122400,
   "status": "passed"
 });
 formatter.match({
   "location": "SignInSteps.user_click_SignIn_link()"
 });
 formatter.result({
-  "duration": 5434091400,
+  "duration": 7013524400,
   "status": "passed"
 });
 formatter.match({
   "location": "SignInSteps.browser_should_display_SignIn_page()"
 });
 formatter.result({
-  "duration": 881669500,
+  "duration": 874163000,
   "status": "passed"
 });
 formatter.scenario({
@@ -1826,7 +1844,7 @@ formatter.match({
   "location": "SignInSteps.user_enter_email_as(String)"
 });
 formatter.result({
-  "duration": 1111110300,
+  "duration": 1134201900,
   "status": "passed"
 });
 formatter.match({
@@ -1839,14 +1857,14 @@ formatter.match({
   "location": "SignInSteps.user_enter_password_as(String)"
 });
 formatter.result({
-  "duration": 958128200,
+  "duration": 942453400,
   "status": "passed"
 });
 formatter.match({
   "location": "SignInSteps.user_click_SignIn_button()"
 });
 formatter.result({
-  "duration": 6758981800,
+  "duration": 6762099500,
   "status": "passed"
 });
 formatter.match({
@@ -1859,11 +1877,11 @@ formatter.match({
   "location": "AccountPageSteps.passworderror_should_display_as(String)"
 });
 formatter.result({
-  "duration": 869464800,
+  "duration": 883684100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 715016800,
+  "duration": 656730300,
   "status": "passed"
 });
 });

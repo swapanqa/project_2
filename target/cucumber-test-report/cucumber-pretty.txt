@@ -30,57 +30,15 @@ Feature: LordAndTaylor shipping promotion functionality
     [32mAnd [0m[32mUser verify product name on LancomeBagPage as "[0m[32m[1mComforting Exfoliating Cream/3.4 oz.[0m[32m"[0m       [90m# BagPageSteps.user_verify_product_name_on_LancomeBagPage_as(String)[0m
     [32mAnd [0m[32mUser verify subTotal on LancomeBagPage as "[0m[32m[1m$52.00[0m[32m"[0m                                         [90m# BagPageSteps.user_verify_subTotal_on_LancomeBagPage_as(String)[0m
     [32mAnd [0m[32mUser verify estimatedTotal on LancomeBagPage as "[0m[32m[1m$61.95[0m[32m"[0m                                   [90m# BagPageSteps.user_verify_estimatedTotal_on_LancomeBagPage_as(String)[0m
-    [31mAnd [0m[31mUser click checkout button on bagPage[0m                                                      [90m# SimilarButtonsSteps.user_click_checkout_button_on_bagPage()[0m
-      [31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='jsStartCheckout'][contains(text(),'Checkout')]"}
-        (Session info: chrome=65.0.3325.181)
-        (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-      Command duration or timeout: 0 milliseconds
-      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-      Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
-      System info: host: 'SHIFT-PC01', ip: '192.168.0.10', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_151'
-      Driver info: org.openqa.selenium.chrome.ChromeDriver
-      Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\SHIFTS~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
-      Session ID: f7a436ace32189d4da4cad679436652c
-      *** Element info: {Using=xpath, value=//a[@id='jsStartCheckout'][contains(text(),'Checkout')]}
-      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-      	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
-      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
-      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-      	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-      	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-      	at com.sun.proxy.$Proxy19.getWrappedElement(Unknown Source)
-      	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-      	at com.google.common.collect.Iterators$6.transform(Iterators.java:788)
-      	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
-      	at com.google.common.collect.Iterators.addAll(Iterators.java:358)
-      	at com.google.common.collect.Lists.newArrayList(Lists.java:155)
-      	at com.google.common.collect.Lists.newArrayList(Lists.java:141)
-      	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:535)
-      	at com.lordandtaylor.qa.framework.utils.SeleniumUtils.highlight(SeleniumUtils.java:160)
-      	at com.lordandtaylor.qa.framework.pages.ViewBagPage.clickCheckoutButton(ViewBagPage.java:98)
-      	at com.lordandtaylor.qa.framework.steps.SimilarButtonsSteps.user_click_checkout_button_on_bagPage(SimilarButtonsSteps.java:34)
-      	at ✽.And User click checkout button on bagPage(src/test/resources/features/LordAndTaylorShipPromo.feature:34)
-      [0m
-    [36mThen [0m[36mCheckout page should display Lancome products[0m                                             [90m# CheckoutPageSteps.checkout_page_should_display_Lancome_products()[0m
-    [36mWhen [0m[36mUser verify product name on LancomeCheckoutPage as "[0m[36m[1mComforting Exfoliating Cream/3.4 oz.[0m[36m"[0m [90m# CheckoutPageSteps.user_verify_product_name_on_LancomeCheckoutPage_as(String)[0m
-    [36mAnd [0m[36mUser verify product quantity on LancomeCheckoutPage as "[0m[36m[1m2[0m[36m"[0m                                 [90m# CheckoutPageSteps.user_verify_product_quantity_on_LancomeCheckoutPage_as(String)[0m
-    [36mAnd [0m[36mUser verify itemTotal on LancomeCheckoutPage as "[0m[36m[1m$52.00[0m[36m"[0m                                   [90m# CheckoutPageSteps.user_verify_itemTotal_on_LancomeCheckoutPage_as(String)[0m
-    [36mAnd [0m[36mUser verify shipping on LancomeCheckoutPage as "[0m[36m[1mFREE[0m[36m"[0m                                      [90m# CheckoutPageSteps.user_verify_shipping_on_LancomeCheckoutPage_as(String)[0m
-    [36mAnd [0m[36mUser verify verify tax on LancomeCheckoutPage as "[0m[36m[1m$0.00[0m[36m"[0m                                   [90m# CheckoutPageSteps.user_verify_verify_tax_on_LancomeCheckoutPage_as(String)[0m
-    [36mAnd [0m[36mUser verify orderTotal on LancomeCheckoutPage as "[0m[36m[1m$52.00[0m[36m"[0m                                  [90m# CheckoutPageSteps.user_verify_orderTotal_on_LancomeCheckoutPage_as(String)[0m
-    [36mAnd [0m[36mUser click SignOut button[0m                                                                  [90m# AccountPageSteps.user_click_SignOut_button()[0m
+    [32mAnd [0m[32mUser click checkout button on bagPage[0m                                                      [90m# SimilarButtonsSteps.user_click_checkout_button_on_bagPage()[0m
+    [32mThen [0m[32mCheckout page should display Lancome products[0m                                             [90m# CheckoutPageSteps.checkout_page_should_display_Lancome_products()[0m
+    [32mWhen [0m[32mUser verify product name on LancomeCheckoutPage as "[0m[32m[1mComforting Exfoliating Cream/3.4 oz.[0m[32m"[0m [90m# CheckoutPageSteps.user_verify_product_name_on_LancomeCheckoutPage_as(String)[0m
+    [32mAnd [0m[32mUser verify product quantity on LancomeCheckoutPage as "[0m[32m[1m2[0m[32m"[0m                                 [90m# CheckoutPageSteps.user_verify_product_quantity_on_LancomeCheckoutPage_as(String)[0m
+    [32mAnd [0m[32mUser verify itemTotal on LancomeCheckoutPage as "[0m[32m[1m$52.00[0m[32m"[0m                                   [90m# CheckoutPageSteps.user_verify_itemTotal_on_LancomeCheckoutPage_as(String)[0m
+    [32mAnd [0m[32mUser verify shipping on LancomeCheckoutPage as "[0m[32m[1mFREE[0m[32m"[0m                                      [90m# CheckoutPageSteps.user_verify_shipping_on_LancomeCheckoutPage_as(String)[0m
+    [32mAnd [0m[32mUser verify verify tax on LancomeCheckoutPage as "[0m[32m[1m$0.00[0m[32m"[0m                                   [90m# CheckoutPageSteps.user_verify_verify_tax_on_LancomeCheckoutPage_as(String)[0m
+    [32mAnd [0m[32mUser verify orderTotal on LancomeCheckoutPage as "[0m[32m[1m$52.00[0m[32m"[0m                                  [90m# CheckoutPageSteps.user_verify_orderTotal_on_LancomeCheckoutPage_as(String)[0m
+    [32mAnd [0m[32mUser click SignOut button[0m                                                                  [90m# AccountPageSteps.user_click_SignOut_button()[0m
 
   Background:                                         [90m# src/test/resources/features/LordAndTaylorShipPromo.feature:5[0m
     Given: As a validated user
@@ -107,26 +65,19 @@ Feature: LordAndTaylor shipping promotion functionality
     [32mAnd [0m[32mUser click addToBag button[0m                                                            [90m# SimilarButtonsSteps.user_click_addToBag_button()[0m
     [32mAnd [0m[32mUser click viewMyBagAndCheckOut[0m                                                       [90m# SimilarButtonsSteps.user_click_viewMyBagAndCheckOut()[0m
     [32mThen [0m[32mBag page should display[0m                                                              [90m# BagPageSteps.bag_page_should_display()[0m
-    [31mWhen [0m[31mUser verify totalItems on ShiseidoBagPage as "[0m[31m[1mItems (1)[0m[31m"[0m                             [90m# BagPageSteps.user_verify_totalItems_on_ShiseidoBagPage_as(String)[0m
-      [31morg.junit.ComparisonFailure: expected:<Items ([1])> but was:<Items ([3])>
-      	at org.junit.Assert.assertEquals(Assert.java:115)
-      	at org.junit.Assert.assertEquals(Assert.java:144)
-      	at com.lordandtaylor.qa.framework.pages.ViewBagPage.verifyTotalItemsInBag(ViewBagPage.java:58)
-      	at com.lordandtaylor.qa.framework.steps.BagPageSteps.user_verify_totalItems_on_ShiseidoBagPage_as(BagPageSteps.java:47)
-      	at ✽.When User verify totalItems on ShiseidoBagPage as "Items (1)"(src/test/resources/features/LordAndTaylorShipPromo.feature:57)
-      [0m
-    [36mAnd [0m[36mUser verify product name on ShiseidoBagPage as "[0m[36m[1mNatural Eyebrow Pencil/0.1 oz.[0m[36m"[0m       [90m# BagPageSteps.user_verify_product_name_on_ShiseidoBagPage_as(String)[0m
-    [36mAnd [0m[36mUser verify subTotal on ShiseidoBagPage as "[0m[36m[1m$20.00[0m[36m"[0m                                   [90m# BagPageSteps.user_verify_subTotal_on_ShiseidoBagPage_as(String)[0m
-    [36mAnd [0m[36mUser verify estimatedTotal on ShiseidoBagPage as "[0m[36m[1m$25.95[0m[36m"[0m                             [90m# BagPageSteps.user_verify_estimatedTotal_on_ShiseidoBagPage_as(String)[0m
-    [36mAnd [0m[36mUser click checkout button on bagPage[0m                                                 [90m# SimilarButtonsSteps.user_click_checkout_button_on_bagPage()[0m
-    [36mThen [0m[36mCheckout page should display Shiseido products[0m                                       [90m# CheckoutPageSteps.checkout_page_should_display_Shiseido_products()[0m
-    [36mWhen [0m[36mUser verify product name on ShiseidoCheckoutPage as "[0m[36m[1mNatural Eyebrow Pencil/0.1 oz.[0m[36m"[0m [90m# CheckoutPageSteps.user_verify_product_name_on_ShiseidoCheckoutPage_as(String)[0m
-    [36mAnd [0m[36mUser verify product quantity on ShiseidoCheckoutPage as "[0m[36m[1m1[0m[36m"[0m                           [90m# CheckoutPageSteps.user_verify_product_quantity_on_ShiseidoCheckoutPage_as(String)[0m
-    [36mAnd [0m[36mUser verify itemTotal on ShiseidoCheckoutPage as "[0m[36m[1m$20.00[0m[36m"[0m                             [90m# CheckoutPageSteps.user_verify_itemTotal_on_ShiseidoCheckoutPage_as(String)[0m
-    [36mAnd [0m[36mUser verify shipping on ShiseidoCheckoutPage as "[0m[36m[1m$5.95[0m[36m"[0m                               [90m# CheckoutPageSteps.user_verify_shipping_on_ShiseidoCheckoutPage_as(String)[0m
-    [36mAnd [0m[36mUser verify verify tax on ShiseidoCheckoutPage as "[0m[36m[1m$0.00[0m[36m"[0m                             [90m# CheckoutPageSteps.user_verify_verify_tax_on_ShiseidoCheckoutPage_as(String)[0m
-    [36mAnd [0m[36mUser verify orderTotal on ShiseidoCheckoutPage as "[0m[36m[1m$25.95[0m[36m"[0m                            [90m# CheckoutPageSteps.user_verify_orderTotal_on_ShiseidoCheckoutPage_as(String)[0m
-    [36mAnd [0m[36mUser click SignOut button[0m                                                             [90m# AccountPageSteps.user_click_SignOut_button()[0m
+    [32mWhen [0m[32mUser verify totalItems on ShiseidoBagPage as "[0m[32m[1mItems (1)[0m[32m"[0m                             [90m# BagPageSteps.user_verify_totalItems_on_ShiseidoBagPage_as(String)[0m
+    [32mAnd [0m[32mUser verify product name on ShiseidoBagPage as "[0m[32m[1mNatural Eyebrow Pencil/0.1 oz.[0m[32m"[0m       [90m# BagPageSteps.user_verify_product_name_on_ShiseidoBagPage_as(String)[0m
+    [32mAnd [0m[32mUser verify subTotal on ShiseidoBagPage as "[0m[32m[1m$20.00[0m[32m"[0m                                   [90m# BagPageSteps.user_verify_subTotal_on_ShiseidoBagPage_as(String)[0m
+    [32mAnd [0m[32mUser verify estimatedTotal on ShiseidoBagPage as "[0m[32m[1m$25.95[0m[32m"[0m                             [90m# BagPageSteps.user_verify_estimatedTotal_on_ShiseidoBagPage_as(String)[0m
+    [32mAnd [0m[32mUser click checkout button on bagPage[0m                                                 [90m# SimilarButtonsSteps.user_click_checkout_button_on_bagPage()[0m
+    [32mThen [0m[32mCheckout page should display Shiseido products[0m                                       [90m# CheckoutPageSteps.checkout_page_should_display_Shiseido_products()[0m
+    [32mWhen [0m[32mUser verify product name on ShiseidoCheckoutPage as "[0m[32m[1mNatural Eyebrow Pencil/0.1 oz.[0m[32m"[0m [90m# CheckoutPageSteps.user_verify_product_name_on_ShiseidoCheckoutPage_as(String)[0m
+    [32mAnd [0m[32mUser verify product quantity on ShiseidoCheckoutPage as "[0m[32m[1m1[0m[32m"[0m                           [90m# CheckoutPageSteps.user_verify_product_quantity_on_ShiseidoCheckoutPage_as(String)[0m
+    [32mAnd [0m[32mUser verify itemTotal on ShiseidoCheckoutPage as "[0m[32m[1m$20.00[0m[32m"[0m                             [90m# CheckoutPageSteps.user_verify_itemTotal_on_ShiseidoCheckoutPage_as(String)[0m
+    [32mAnd [0m[32mUser verify shipping on ShiseidoCheckoutPage as "[0m[32m[1m$5.95[0m[32m"[0m                               [90m# CheckoutPageSteps.user_verify_shipping_on_ShiseidoCheckoutPage_as(String)[0m
+    [32mAnd [0m[32mUser verify verify tax on ShiseidoCheckoutPage as "[0m[32m[1m$0.00[0m[32m"[0m                             [90m# CheckoutPageSteps.user_verify_verify_tax_on_ShiseidoCheckoutPage_as(String)[0m
+    [32mAnd [0m[32mUser verify orderTotal on ShiseidoCheckoutPage as "[0m[32m[1m$25.95[0m[32m"[0m                            [90m# CheckoutPageSteps.user_verify_orderTotal_on_ShiseidoCheckoutPage_as(String)[0m
+    [32mAnd [0m[32mUser click SignOut button[0m                                                             [90m# AccountPageSteps.user_click_SignOut_button()[0m
 #This is Lord&Taylor Sign In functionality:
 Feature: LordAndTaylor SignIn Functionality
 
@@ -143,8 +94,38 @@ Feature: LordAndTaylor SignIn Functionality
     [32mWhen [0m[32mUser enter email as "[0m[32m[1mhema_ahmad@yahoo.com[0m[32m"[0m   [90m# SignInSteps.user_enter_email_as(String)[0m
     [32mAnd [0m[32mUser enter password as "[0m[32m[1mHema&123[0m[32m"[0m             [90m# SignInSteps.user_enter_password_as(String)[0m
     [32mAnd [0m[32mUser click SignIn button[0m                      [90m# SignInSteps.user_click_SignIn_button()[0m
-    [32mThen [0m[32mAccount page should display greeting message[0m [90m# AccountPageSteps.account_page_should_display_greeting_message()[0m
-    [32mAnd [0m[32mUser click SignOut button[0m                     [90m# AccountPageSteps.user_click_SignOut_button()[0m
+    [31mThen [0m[31mAccount page should display greeting message[0m [90m# AccountPageSteps.account_page_should_display_greeting_message()[0m
+      [31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[@class='account-header__greeting']"}
+        (Session info: chrome=65.0.3325.181)
+        (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 0 milliseconds
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+      System info: host: 'SHIFT-PC01', ip: '192.168.0.10', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_151'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\SHIFTS~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
+      Session ID: 5a7dcdb8dee70880f1fcb3bee4615e75
+      *** Element info: {Using=xpath, value=//h1[@class='account-header__greeting']}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+      	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at com.lordandtaylor.qa.framework.steps.AccountPageSteps.account_page_should_display_greeting_message(AccountPageSteps.java:34)
+      	at ✽.Then Account page should display greeting message(src/test/resources/features/LordAndTaylorSignIn.feature:19)
+      [0m
+    [36mAnd [0m[36mUser click SignOut button[0m                     [90m# AccountPageSteps.user_click_SignOut_button()[0m
 
   @debug @functional
   Scenario Outline: 2. Invalid email and valid password [90m# src/test/resources/features/LordAndTaylorSignIn.feature:24[0m

@@ -30,9 +30,9 @@ public class LancomeProductPage extends PageBase{
     private WebElement viewMyBagAndCheckOut;
 
 
-/*    public LancomeProductPage(){
+    public LancomeProductPage(){
         PageFactory.initElements(driver, this);
-    }*/
+    }
 
     public void verifyLancomeProductTitle(){
         highlight(lancomeProductTitle);

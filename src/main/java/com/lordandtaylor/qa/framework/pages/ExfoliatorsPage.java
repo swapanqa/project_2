@@ -24,11 +24,9 @@ public class ExfoliatorsPage extends PageBase{
     private WebElement lancomeProductPrice;
 
 
-/*
     public ExfoliatorsPage(){
         PageFactory.initElements(driver,this);
     }
-*/
 
     public void verifyPageName(){
         highlight(exfoliatorsPage);
