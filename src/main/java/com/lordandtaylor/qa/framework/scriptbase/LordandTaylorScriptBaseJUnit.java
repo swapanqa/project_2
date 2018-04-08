@@ -34,8 +34,9 @@ public class LordandTaylorScriptBaseJUnit extends PageBase{
     @Before
     public void beforeMethod(){
 
-        System.out.println("Browser: " + browserName);//used to do Parallel //***Use to run in Jenkins (parallel in cloud)
+        //System.out.println("Browser: " + browserName);//used to do Parallel //***Use to run in Jenkins (parallel in cloud)
         driver = DriverFactory.getInstance(browserName).getDriver(); //used to do Parallel by initaialze and get whatever Driver instance from DriverFactory
+        //driver = DriverFactory.getInstance().getDriver(); //used to do Parallel by initaialze and get whatever Driver instance from DriverFactory
 
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
@@ -86,9 +87,9 @@ public class LordandTaylorScriptBaseJUnit extends PageBase{
     @Parameterized.Parameters(name = "{index} - Browser - {0}") //This is parameterized method which will open whatever browser you need, but default is chrome.
     public static Collection<Object[]> browsers(){
         return Arrays.asList(new Object[][]{
-                //{"chrome"}, //note: if you comment any browser, it would just run in the rest that's there.
+                {"chrome"}, //note: if you comment any browser, it would just run in the rest that's there.
                 //{"firefox"},
-                {"cloud_chrome_64"}, //4.CloudTest-need to put this browser also, that you might want to execute in.
+                //{"cloud_chrome_64"}, //4.CloudTest-need to put this browser also, that you might want to execute in.
                 //{"cloud_ie_11"} //5.CloudTest-need to put this browser also, that you might want to execute in.
         });
     }

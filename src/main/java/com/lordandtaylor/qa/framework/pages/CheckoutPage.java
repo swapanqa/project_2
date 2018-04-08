@@ -30,10 +30,10 @@ public class CheckoutPage extends PageBase {
     private WebElement orderTotal;
 
 
-    public CheckoutPage(){
+  /*  public CheckoutPage(){
         PageFactory.initElements(driver, this);
     }
-
+*/
     public void verifyProductName(String expectedName){
         highlight(productName);
         String text = productName.getText();

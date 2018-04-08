@@ -44,10 +44,9 @@ public class HomePage extends PageBase{
 
 
     //constructor
-    public HomePage(){
-        super();
+ /*   public HomePage(){
         PageFactory.initElements(driver,this);
-    }
+    }*/
 
     public void closeEmailPopUp(){
         WebElement firstToKnowPopUpWindow = null;

@@ -50,9 +50,9 @@ public class SignInPage extends PageBase {
     @FindBy(how = How.XPATH, using = "//div[@class='alert alert--danger']")
     private WebElement alertMsg;
 
-    public SignInPage(){
+/*    public SignInPage(){
         PageFactory.initElements(driver, this);
-    }
+    }*/
 
     public void clickSignInLink(){
         highlight(signInLink);

@@ -15,15 +15,15 @@ import java.net.URL;
 /**
  * @author Hema on  3/9/2018
  */
-public class DriverFactory {
+public class DriverFactory  {
 
-    private static DriverFactory instance = null; //declare DriverFactory variable.
+    private static DriverFactory instance = null;
 
-    //1.CloudTest-To execute in Cloud, need these credentials from BrowserStack.com.
     public static final String USERNAME = "hemaahmad1";
     public static final String AUTOMATE_KEY = "hSiW1nmuWsDrPpu9mUn7";
     public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub"; //This selenium cloud Hub address from BrowserStack.
     public static final String LOCAL_GRID_URL = "http://10.10.20.70:4444/wd/hub";
+
 
     private DriverFactory() {
         //Do-nothing..Do not allow to initialize this class from outside
@@ -38,17 +38,9 @@ public class DriverFactory {
     }
     public static DriverFactory getInstance(String browserName)
     {
-        System.out.println("Running browser: " + browserName);
-
         if(instance == null){
             instance = new DriverFactory();
         }
-/*
-
-        FirefoxDriverManager.getInstance().setup(); //get instance of specific FireFox browser,default will be chrome if not specified, because of code just below.
-        ChromeDriverManager.getInstance().setup(); //get instance of specific Chrome browser, ,default will be chrome if not specified, because of code just below.
-*/
-
 
         if(browserName.equalsIgnoreCase("chrome")){
             ChromeDriverManager.getInstance().setup();
@@ -65,23 +57,6 @@ public class DriverFactory {
             caps.setCapability("os", "Windows");
             caps.setCapability("os_version", "7");
             caps.setCapability("resolution", "1920x1080");
-            caps.setCapability("browserstack.networkLogs", "true"); //enable ConsoleLog in BrowserStack
-            caps.setCapability("browserstack.debug", "true"); //enable VisualLogs in BrowserStack
-
-            try {
-                instance.driver.set(new RemoteWebDriver(new URL(URL), caps));
-            } catch (MalformedURLException e) {
-                e.printStackTrace();
-            }
-        } else if(browserName.equalsIgnoreCase("cloud_firefox_64")){
-            DesiredCapabilities caps = new DesiredCapabilities();
-            caps.setCapability("browser", "Firefox");
-            caps.setCapability("browser_version", "64.0");
-            caps.setCapability("os", "Windows");
-            caps.setCapability("os_version", "7");
-            caps.setCapability("resolution", "1920x1080");
-            caps.setCapability("browserstack.networkLogs", "true"); //enable ConsoleLog in BrowserStack
-            caps.setCapability("browserstack.debug", "true"); //enable VisualLogs in BrowserStack
 
             try {
                 instance.driver.set(new RemoteWebDriver(new URL(URL), caps));
@@ -96,15 +71,12 @@ public class DriverFactory {
             caps.setCapability("os", "Windows");
             caps.setCapability("os_version", "7");
             caps.setCapability("resolution", "1920x1080");
-            caps.setCapability("browserstack.networkLogs", "true"); //enable ConsoleLog in BrowserStack
-            caps.setCapability("browserstack.debug", "true"); //enable VisualLogs in BrowserStack
-
             try {
                 instance.driver.set(new RemoteWebDriver(new URL(URL), caps));
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             }
-        }/*else if(browserName.equalsIgnoreCase("grid_chrome_16")){
+        /*}else if(browserName.equalsIgnoreCase("grid_chrome_16")){
             DesiredCapabilities caps = new DesiredCapabilities();
             caps.setPlatform(Platform.ANY);
             caps.setBrowserName("chrome");
@@ -132,20 +104,21 @@ public class DriverFactory {
                 instance.driver.set(new RemoteWebDriver(new URL(LOCAL_GRID_URL), caps));
             } catch (MalformedURLException e) {
                 e.printStackTrace();
-            }
-        }*/
+            }*/
+        }
         return instance;
     }
-    ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>()
+
+    ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>() // thread local driver object for webdriver
     {
         @Override
-        protected WebDriver initialValue() // Create temporary instance of class and override initialValue protected method.
+        protected WebDriver initialValue()
         {
-            ChromeDriverManager.getInstance().setup(); //To override this method, everytime WebDriver instance is made...
-            return new ChromeDriver(); // ...a ChromeDriver instance is created and stored in datastructure for that instance.
+/*            ChromeDriverManager.getInstance().setup();
+            return new ChromeDriver();*/
+            return null;
         }
     };
-
     public WebDriver getDriver() // call this method to get the driver object and launch the browser
     {
         return driver.get();
@@ -155,5 +128,5 @@ public class DriverFactory {
         driver.get().quit();
         driver.remove();
     }
-
 }
+

@@ -8,7 +8,7 @@ import org.junit.runner.JUnitCore;
 
 /**
  * @author Hema on  4/5/2018
- NOTE: ParallelSuite not working. Need to fix.
+ //TODO: ParallelSuite not working. Need to fix.
  */
 public class ParallelSuite {
 

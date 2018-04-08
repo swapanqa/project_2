@@ -42,9 +42,11 @@ public class ViewBagPage extends PageBase {
     private WebElement checkoutAsGuest;
 
 
+/*
     public ViewBagPage(){
         PageFactory.initElements(driver, this);
     }
+*/
 
     public void verifyBagPage(){
         highlight(bagPage);

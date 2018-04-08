@@ -18,7 +18,7 @@ public class SeleniumUtils extends HamcrestTest{
 
     public static final int DEFAULT_WAIT_TIME = 10;
 
-    protected WebDriver driver = DriverFactory.getInstance().getDriver(); //Here we declare driver, but getting it's instance from DriverFactory class.
+    public WebDriver driver = DriverFactory.getInstance().getDriver(); //Here we declare driver, but getting it's instance from DriverFactory class.
 
 
     public SeleniumUtils() { //after driver declaration above, No need to create constructor to be able to pass driver to other classes.

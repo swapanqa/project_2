@@ -30,9 +30,11 @@ public class ShiseidoProductPage extends PageBase {
     private WebElement viewMyBagAndCheckOut;
 
 
+/*
     public ShiseidoProductPage(){
         PageFactory.initElements(driver, this);
     }
+*/
 
     public void verifyShiseidoProductTitle(){
         highlight(shiseidoProductTitle);

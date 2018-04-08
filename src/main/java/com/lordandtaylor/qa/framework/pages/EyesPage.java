@@ -31,10 +31,12 @@ public class EyesPage extends PageBase {
     @FindBy(how = How.XPATH, using = "//div[@id='product-0500016268484-details']//span[contains(text(),'$20.00')]")
     private WebElement shiseidoProductPrice;
 
+/*
 
     public EyesPage(){
         PageFactory.initElements(driver, this);
     }
+*/
 
     public void verifyPageName(){
         highlight(eyesPage);
