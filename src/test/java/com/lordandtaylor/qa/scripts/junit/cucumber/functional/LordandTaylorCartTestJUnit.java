@@ -12,7 +12,7 @@ import org.junit.runners.Parameterized;
  * This is for sequential (not parallel) Multi-Browser operation
  */
 
-@RunWith(Parameterized.class) //***Use to run in Jenkins (parallel in cloud)
+//@RunWith(Parameterized.class) //***Use to run in Jenkins (parallel in cloud)
 public class LordandTaylorCartTestJUnit extends LordandTaylorScriptBaseJUnit {
 
     @Test

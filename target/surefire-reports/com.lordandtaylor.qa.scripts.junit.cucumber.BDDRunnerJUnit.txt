@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.lordandtaylor.qa.scripts.junit.cucumber.BDDRunnerJUnit
--------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 87.468 s - in com.lordandtaylor.qa.scripts.junit.cucumber.BDDRunnerJUnit

@@ -42,6 +42,9 @@ public class DriverFactory  {
             instance = new DriverFactory();
         }
 
+    /*    FirefoxDriverManager.getInstance().setup();
+        ChromeDriverManager.getInstance().setup();
+*/
         if(browserName.equalsIgnoreCase("chrome")){
             ChromeDriverManager.getInstance().setup();
             instance.driver.set(new ChromeDriver());
