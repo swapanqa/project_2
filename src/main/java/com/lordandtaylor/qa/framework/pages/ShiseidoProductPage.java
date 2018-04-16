@@ -20,7 +20,7 @@ public class ShiseidoProductPage extends PageBase {
     @FindBy(how = How.ID, using = "numberInput")
     private WebElement quantity;
 
-    @FindBy(how = How.XPATH, using = "//span[@class='radiogroup__radio-button'][@data-reactid='51']")
+    @FindBy(how = How.XPATH, using = "//span[@class='radiogroup__radio-button'][@data-reactid='53']")
     private WebElement shipOption;
 
     @FindBy(how = How.XPATH, using = "//button[@class='hbc-button hbc-button--full hbc-button--primary']")

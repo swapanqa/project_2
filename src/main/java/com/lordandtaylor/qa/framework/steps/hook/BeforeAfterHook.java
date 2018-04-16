@@ -17,7 +17,7 @@ public class BeforeAfterHook extends StepBase{
     public void setUp(){
 
 /*        ChromeDriverManager.getInstance().setup();
-        driver = new ChromeDriver();*/
+        driver = new ChromeDriver()*/;
 
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

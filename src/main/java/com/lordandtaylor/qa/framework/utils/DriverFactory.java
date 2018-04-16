@@ -22,7 +22,7 @@ public class DriverFactory  {
     public static final String USERNAME = "hemaahmad1";
     public static final String AUTOMATE_KEY = "hSiW1nmuWsDrPpu9mUn7";
     public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub"; //This selenium cloud Hub address from BrowserStack.
-    public static final String LOCAL_GRID_URL = "http://10.10.20.70:4444/wd/hub";
+    //public static final String LOCAL_GRID_URL = "http://10.10.20.70:4444/wd/hub";
 
 
     private DriverFactory() {

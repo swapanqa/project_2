@@ -19,7 +19,7 @@ public class EyesPage extends PageBase {
     @FindBy(how = How.XPATH, using = "//span[contains(text(),'EYES')]")
     private WebElement eyesPage;
 
-    @FindBy(how = How.XPATH, using = "//div[@id='pc-top']//ol[@class='pa-page-number']//a[contains(text(),'3')]")
+    @FindBy(how = How.XPATH, using = "//div[@id='pc-top']//ol[@class='pa-page-number']//a[contains(text(),'1')]")
     private WebElement pageNumber;
 
     @FindBy(how = How.ID, using = "img_0500016268484-0")

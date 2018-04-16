@@ -35,7 +35,7 @@ public class ViewBagPage extends PageBase {
     @FindBy(how = How.XPATH, using = "//dd[@id='jsVal-grandTotal']")
     private WebElement estimatedTotal;
 
-    @FindBy(how = How.XPATH, using = "//a[@id='jsEnterCheckout'][contains(text(),'Checkout')]")
+    @FindBy(how = How.XPATH, using = "//a[contains(@id,'Checkout')][contains(text(),'Checkout')]")
     private WebElement checkOutButton;
 
     @FindBy(how = How.ID, using = "jsCheckoutRemediationGuestCheckout")

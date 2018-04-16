@@ -34,8 +34,8 @@ public class LordandTaylorScriptBaseJUnit extends PageBase{
     @Before
     public void beforeMethod(){
 
-        //System.out.println("Browser: " + browserName);//used to do Parallel //***Use to run in Jenkins (parallel in cloud)
-        driver = DriverFactory.getInstance(browserName).getDriver(); //used to do Parallel by initaialze and get whatever Driver instance from DriverFactory
+        System.out.println("Browser: " + browserName);//used to do Parallel //***Use to run in Jenkins (parallel in cloud)
+        //driver = DriverFactory.getInstance(browserName).getDriver(); //used to do Parallel by initaialze and get whatever Driver instance from DriverFactory
         //driver = DriverFactory.getInstance().getDriver(); //used to do Parallel by initaialze and get whatever Driver instance from DriverFactory
 
         driver.manage().window().maximize();
