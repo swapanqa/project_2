@@ -27,7 +27,7 @@ public class LordandTaylorScriptBaseTestNG extends PageBase{
     @Parameters("browserName") //needed to run testNG script in remote
     public void beforeMethod(@Optional(value = "chrome") String browserName) throws Exception{ //needed to run testNG script in remote
     //public void beforeMethod(){
-        driver = DriverFactory.getInstance(browserName).getDriver();
+        //driver = DriverFactory.getInstance(browserName).getDriver();
         //driver = DriverFactory.getInstance().getDriver();
 
         driver.manage().window().maximize();

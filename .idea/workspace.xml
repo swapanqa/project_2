@@ -3,23 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7af71b87-962a-4357-9a65-3a5f3f24057d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/pages/EyesPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/pages/EyesPage.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/pages/ShiseidoProductPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/pages/ShiseidoProductPage.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/pages/ViewBagPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/pages/ViewBagPage.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/scriptbase/LordandTaylorScriptBaseJUnit.java" afterPath="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/scriptbase/LordandTaylorScriptBaseJUnit.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/steps/hook/BeforeAfterHook.java" afterPath="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/steps/hook/BeforeAfterHook.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/steps/hook/StepBase.java" afterPath="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/steps/hook/StepBase.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/utils/DriverFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/utils/DriverFactory.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/utils/SeleniumUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/utils/SeleniumUtils.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/lordandtaylor/qa/scripts/junit/cucumber/functional/LordandTaylorCartTestJUnit.java" afterPath="$PROJECT_DIR$/src/test/java/com/lordandtaylor/qa/scripts/junit/cucumber/functional/LordandTaylorCartTestJUnit.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lordandtaylor/qa/framework/pages/EyesPage.class" afterPath="$PROJECT_DIR$/target/classes/com/lordandtaylor/qa/framework/pages/EyesPage.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lordandtaylor/qa/framework/pages/ShiseidoProductPage.class" afterPath="$PROJECT_DIR$/target/classes/com/lordandtaylor/qa/framework/pages/ShiseidoProductPage.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lordandtaylor/qa/framework/pages/ViewBagPage.class" afterPath="$PROJECT_DIR$/target/classes/com/lordandtaylor/qa/framework/pages/ViewBagPage.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lordandtaylor/qa/framework/scriptbase/LordandTaylorScriptBaseJUnit.class" afterPath="$PROJECT_DIR$/target/classes/com/lordandtaylor/qa/framework/scriptbase/LordandTaylorScriptBaseJUnit.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lordandtaylor/qa/framework/steps/hook/StepBase.class" afterPath="$PROJECT_DIR$/target/classes/com/lordandtaylor/qa/framework/steps/hook/StepBase.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lordandtaylor/qa/framework/utils/DriverFactory.class" afterPath="$PROJECT_DIR$/target/classes/com/lordandtaylor/qa/framework/utils/DriverFactory.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lordandtaylor/qa/framework/utils/SeleniumUtils.class" afterPath="$PROJECT_DIR$/target/classes/com/lordandtaylor/qa/framework/utils/SeleniumUtils.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/lordandtaylor/qa/scripts/junit/cucumber/functional/LordandTaylorCartTestJUnit.class" afterPath="$PROJECT_DIR$/target/test-classes/com/lordandtaylor/qa/scripts/junit/cucumber/functional/LordandTaylorCartTestJUnit.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/scriptbase/LordandTaylorScriptBaseTestNG.java" afterPath="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/scriptbase/LordandTaylorScriptBaseTestNG.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lordandtaylor/qa/framework/scriptbase/LordandTaylorScriptBaseTestNG.class" afterPath="$PROJECT_DIR$/target/classes/com/lordandtaylor/qa/framework/scriptbase/LordandTaylorScriptBaseTestNG.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,6 +34,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="LordandTaylorLoginJUnit.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/lordandtaylor/qa/scripts/junit/cucumber/functional/LordandTaylorLoginJUnit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="38" column="10" lean-forward="true" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="LordandTaylorCartTestJUnit.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/lordandtaylor/qa/scripts/junit/cucumber/functional/LordandTaylorCartTestJUnit.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -59,7 +54,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShiseidoProductPage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ShiseidoProductPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/pages/ShiseidoProductPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -165,7 +160,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/pages/SignInPage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/lordandtaylor/qa/scripts/junit/cucumber/ParallelSuite.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/scriptbase/LordandTaylorScriptBaseTestNG.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/steps/hook/BeforeAfterHook.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/lordandtaylor/qa/scripts/junit/cucumber/functional/LordandTaylorCartTestJUnit.java" />
@@ -177,6 +171,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/pages/ViewBagPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/pages/EyesPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/pages/ShiseidoProductPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/scriptbase/LordandTaylorScriptBaseTestNG.java" />
       </list>
     </option>
   </component>
@@ -337,6 +332,15 @@
               <item name="LordAndTaylor" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cucumber" type="462c0819:PsiDirectoryNode" />
+              <item name="functional" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LordAndTaylor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LordAndTaylor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -384,7 +388,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LordandTaylorCartTestJUnit.beauty_Purchase_UNDER_$49_NO_Free_Shipping">
+  <component name="RunManager" selected="JUnit.LordandTaylorLoginJUnit.loginSuccessfullyTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -404,52 +408,6 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
-      <envs />
-    </configuration>
-    <configuration name="Scenario: 1. Free shipping OVER $49 purchase from Beauty" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/features/LordandTaylorShipPromo.feature" />
-      <option name="GLUE" value="com.lordandtaylor.qa.framework.steps" />
-      <option name="myNameFilter" value="^1\. Free shipping OVER \$49 purchase from Beauty$" />
-      <option name="myGeneratedName" value="Scenario: 1. Free shipping OVER $49 purchase from Beauty" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^1\. Free shipping OVER \$49 purchase from Beauty$&quot;" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="LordAndTaylor" />
-      <envs />
-    </configuration>
-    <configuration name="Scenario: 2. No free shipping UNDER $49 purchase from Beauty" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/features/LordandTaylorShipPromo.feature" />
-      <option name="GLUE" value="com.lordandtaylor.qa.framework.steps" />
-      <option name="myNameFilter" value="^2\. No free shipping UNDER \$49 purchase from Beauty$" />
-      <option name="myGeneratedName" value="Scenario: 2. No free shipping UNDER $49 purchase from Beauty" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^2\. No free shipping UNDER \$49 purchase from Beauty$&quot;" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="LordAndTaylor" />
       <envs />
     </configuration>
     <configuration name="BDDRunnerJUnit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -527,6 +485,31 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="LordandTaylorLoginJUnit.loginSuccessfullyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.lordandtaylor.qa.scripts.junit.cucumber.functional.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="LordAndTaylor" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.lordandtaylor.qa.scripts.junit.cucumber.functional" />
+      <option name="MAIN_CLASS_NAME" value="com.lordandtaylor.qa.scripts.junit.cucumber.functional.LordandTaylorLoginJUnit" />
+      <option name="METHOD_NAME" value="loginSuccessfullyTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -553,6 +536,38 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+    </configuration>
+    <configuration name="LordandTaylorLoginTestNG.loginSuccessfullyTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.lordandtaylor.qa.scripts.junit.cucumber.functional.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="LordAndTaylor" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.lordandtaylor.qa.scripts.junit.cucumber.functional" />
+      <option name="MAIN_CLASS_NAME" value="com.lordandtaylor.qa.scripts.junit.cucumber.functional.LordandTaylorLoginTestNG" />
+      <option name="METHOD_NAME" value="loginSuccessfullyTest" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -590,17 +605,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.BDDRunnerJUnit" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.LordandTaylorCartTestJUnit.beauty_Purchase_OVER_$49_Get_FreeShipping" />
-      <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: 2. No free shipping UNDER $49 purchase from Beauty" />
-      <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: 1. Free shipping OVER $49 purchase from Beauty" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.LordandTaylorCartTestJUnit.beauty_Purchase_UNDER_$49_NO_Free_Shipping" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.LordandTaylorCartTestJUnit.beauty_Purchase_UNDER_$49_NO_Free_Shipping" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.LordandTaylorLoginTestNG.loginSuccessfullyTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.LordandTaylorLoginJUnit.loginSuccessfullyTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.LordandTaylorCartTestJUnit.beauty_Purchase_UNDER_$49_NO_Free_Shipping" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.LordandTaylorCartTestJUnit.beauty_Purchase_OVER_$49_Get_FreeShipping" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BDDRunnerJUnit" />
-        <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: 1. Free shipping OVER $49 purchase from Beauty" />
-        <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: 2. No free shipping UNDER $49 purchase from Beauty" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.LordandTaylorLoginJUnit.loginSuccessfullyTest" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.LordandTaylorLoginTestNG.loginSuccessfullyTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.LordandTaylorCartTestJUnit.beauty_Purchase_UNDER_$49_NO_Free_Shipping" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.LordandTaylorCartTestJUnit.beauty_Purchase_OVER_$49_Get_FreeShipping" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BDDRunnerJUnit" />
       </list>
     </recent_temporary>
   </component>
@@ -709,18 +724,19 @@
       <option name="project" value="LOCAL" />
       <updated>1523799562140</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Commit Message: Fixed duplicate chrome browser issue">
+      <created>1523911179200</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1523911179200</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="BDDRunnerJUnit - 2018.04.16 at 15h 36m 31s.xml">
       <configuration name="BDDRunnerJUnit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LordandTaylorCartTestJUnit_beauty_Purchase_OVER_$49_Get_FreeShipping - 2018.04.16 at 14h 57m 20s.xml">
-      <configuration name="LordandTaylorCartTestJUnit.beauty_Purchase_OVER_$49_Get_FreeShipping" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LordandTaylorCartTestJUnit_beauty_Purchase_OVER_$49_Get_FreeShipping - 2018.04.16 at 15h 09m 33s.xml">
-      <configuration name="LordandTaylorCartTestJUnit.beauty_Purchase_OVER_$49_Get_FreeShipping" configurationId="JUnit" />
     </history-entry>
     <history-entry file="LordandTaylorCartTestJUnit_beauty_Purchase_OVER_$49_Get_FreeShipping - 2018.04.16 at 15h 35m 40s.xml">
       <configuration name="LordandTaylorCartTestJUnit.beauty_Purchase_OVER_$49_Get_FreeShipping" configurationId="JUnit" />
@@ -740,8 +756,14 @@
     <history-entry file="LordandTaylorCartTestJUnit_beauty_Purchase_UNDER_$49_NO_Free_Shipping - 2018.04.16 at 16h 38m 15s.xml">
       <configuration name="LordandTaylorCartTestJUnit.beauty_Purchase_UNDER_$49_NO_Free_Shipping" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Scenario__1__Free_shipping_OVER_$49_purchase_from_Beauty - 2018.04.16 at 15h 12m 44s.xml">
-      <configuration name="Scenario: 1. Free shipping OVER $49 purchase from Beauty" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="LordandTaylorLoginJUnit_loginSuccessfullyTest - 2018.04.16 at 16h 44m 10s.xml">
+      <configuration name="LordandTaylorLoginJUnit.loginSuccessfullyTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LordandTaylorLoginTestNG_loginSuccessfullyTest - 2018.04.16 at 16h 42m 40s.xml">
+      <configuration name="LordandTaylorLoginTestNG.loginSuccessfullyTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LordandTaylorLoginTestNG_loginSuccessfullyTest - 2018.04.16 at 16h 43m 42s.xml">
+      <configuration name="LordandTaylorLoginTestNG.loginSuccessfullyTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -800,7 +822,8 @@
     <MESSAGE value="Commit Message: Commented all constructors. Still got issues with second blank chrome browser opening when script is run." />
     <MESSAGE value="Commit Message: uncommented all constructors, since I realized I needed them to run BDD script." />
     <MESSAGE value="Commit Message: another change" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit Message: another change" />
+    <MESSAGE value="Commit Message: Fixed duplicate chrome browser issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit Message: Fixed duplicate chrome browser issue" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -967,13 +990,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/lordandtaylor/qa/scripts/junit/cucumber/functional/LordandTaylorLoginJUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/pages/SignInPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-578">
@@ -1003,22 +1019,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/scriptbase/LordandTaylorScriptBaseTestNG.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="32" lean-forward="false" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/lordandtaylor/qa/scripts/junit/cucumber/functional/LordandTaylorLoginTestNG.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1067,18 +1067,6 @@
         <state relative-caret-position="255">
           <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/scriptbase/LordandTaylorScriptBaseJUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="31" column="41" lean-forward="true" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
-          <folding>
-            <element signature="e#2854#2855#0" expanded="true" />
-            <element signature="e#2899#2900#0" expanded="true" />
-            <marker date="1523905691442" expanded="true" signature="941:1057" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1150,6 +1138,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="22" column="97" lean-forward="false" selection-start-line="22" selection-start-column="97" selection-end-line="22" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/scriptbase/LordandTaylorScriptBaseTestNG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="29" column="10" lean-forward="false" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lordandtaylor/qa/scripts/junit/cucumber/functional/LordandTaylorLoginTestNG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lordandtaylor/qa/framework/scriptbase/LordandTaylorScriptBaseJUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="31" column="41" lean-forward="true" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+          <folding>
+            <element signature="e#2854#2855#0" expanded="true" />
+            <element signature="e#2899#2900#0" expanded="true" />
+            <marker date="1523905691442" expanded="true" signature="941:1057" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lordandtaylor/qa/scripts/junit/cucumber/functional/LordandTaylorLoginJUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="38" column="10" lean-forward="true" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
           <folding />
         </state>
       </provider>
