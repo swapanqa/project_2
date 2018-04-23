@@ -18,6 +18,7 @@ public class SeleniumUtils extends HamcrestTest{
 
     public static final int DEFAULT_WAIT_TIME = 10;
 
+    //protected WebDriver driver;
     protected WebDriver driver = DriverFactory.getInstance().getDriver(); //Here we declare driver, but getting it's instance from DriverFactory class.
 
 

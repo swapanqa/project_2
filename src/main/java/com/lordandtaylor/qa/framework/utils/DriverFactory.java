@@ -60,6 +60,8 @@ public class DriverFactory  {
             caps.setCapability("os", "Windows");
             caps.setCapability("os_version", "7");
             caps.setCapability("resolution", "1920x1080");
+            caps.setCapability("browserstack.debug", "true");
+            caps.setCapability("browserstack.networkLogs", "true");
 
             try {
                 instance.driver.set(new RemoteWebDriver(new URL(URL), caps));
@@ -74,6 +76,9 @@ public class DriverFactory  {
             caps.setCapability("os", "Windows");
             caps.setCapability("os_version", "7");
             caps.setCapability("resolution", "1920x1080");
+            caps.setCapability("browserstack.debug", "true");
+            caps.setCapability("browserstack.networkLogs", "true");
+
             try {
                 instance.driver.set(new RemoteWebDriver(new URL(URL), caps));
             } catch (MalformedURLException e) {
