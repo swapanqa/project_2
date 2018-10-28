@@ -1,17 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-09-20T03:04:26Z" name="Default suite" finished-at="2018-09-20T03:04:26Z" duration-ms="50">
+  <suite started-at="2018-10-07T12:41:12Z" name="Default suite" finished-at="2018-10-07T12:41:21Z" duration-ms="8765">
     <groups>
     </groups>
-    <test started-at="2018-09-20T03:04:26Z" name="Default test" finished-at="2018-09-20T03:04:26Z" duration-ms="50">
-      <class name="com.lordandtaylor.qa.framework.utils.HamcrestTest">
-        <test-method signature="test_RegexCase2()[pri:0, instance:com.lordandtaylor.qa.framework.utils.HamcrestTest@2beee7ff]" started-at="2018-09-19T23:04:26Z" name="test_RegexCase2" finished-at="2018-09-19T23:04:26Z" duration-ms="12" status="PASS">
+    <test started-at="2018-10-07T12:41:12Z" name="Default test" finished-at="2018-10-07T12:41:21Z" duration-ms="8765">
+      <class name="com.lordandtaylor.qa.scripts.junit.cucumber.functional.LordandTaylorLoginTestNG">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.lordandtaylor.qa.scripts.junit.cucumber.functional.LordandTaylorLoginTestNG@79a1728c]" started-at="2018-10-07T08:41:12Z" name="beforeMethod" finished-at="2018-10-07T08:41:19Z" duration-ms="7543" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test_RegexCase2()[pri:0, instance:com.lordandtaylor.qa.scripts.junit.cucumber.functional.LordandTaylorLoginTestNG@79a1728c]" started-at="2018-10-07T08:41:19Z" name="test_RegexCase2" finished-at="2018-10-07T08:41:20Z" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_RegexCase2 -->
-      </class> <!-- com.lordandtaylor.qa.framework.utils.HamcrestTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.lordandtaylor.qa.scripts.junit.cucumber.functional.LordandTaylorLoginTestNG@79a1728c]" started-at="2018-10-07T08:41:20Z" name="afterMethod" finished-at="2018-10-07T08:41:21Z" duration-ms="1144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.lordandtaylor.qa.scripts.junit.cucumber.functional.LordandTaylorLoginTestNG@79a1728c]" started-at="2018-10-07T08:41:21Z" name="beforeMethod" finished-at="2018-10-07T08:41:21Z" duration-ms="17" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'System info: host: 'SHIFT-PC01', ip: '192.168.1.158', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '9.0.4'Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'System info: host: 'SHIFT-PC01', ip: '192.168.1.158', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '9.0.4'Driver info: driver.version: RemoteWebDriverat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:127)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:892)at com.lordandtaylor.qa.framework.scriptbase.LordandTaylorScriptBaseTestNG.beforeMethod(LordandTaylorScriptBaseTestNG.java:33)at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.base/java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:451)at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)at org.testng.internal.Invoker.invokeMethod(Invoker.java:516)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginSuccessfullyTest()[pri:0, instance:com.lordandtaylor.qa.scripts.junit.cucumber.functional.LordandTaylorLoginTestNG@79a1728c]" started-at="2018-10-07T08:41:21Z" name="loginSuccessfullyTest" finished-at="2018-10-07T08:41:21Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'System info: host: 'SHIFT-PC01', ip: '192.168.1.158', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '9.0.4'Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'System info: host: 'SHIFT-PC01', ip: '192.168.1.158', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '9.0.4'Driver info: driver.version: RemoteWebDriverat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:127)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:892)at com.lordandtaylor.qa.framework.scriptbase.LordandTaylorScriptBaseTestNG.beforeMethod(LordandTaylorScriptBaseTestNG.java:33)at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.base/java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:451)at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)at org.testng.internal.Invoker.invokeMethod(Invoker.java:516)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSuccessfullyTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.lordandtaylor.qa.scripts.junit.cucumber.functional.LordandTaylorLoginTestNG@79a1728c]" started-at="2018-10-07T08:41:21Z" name="afterMethod" finished-at="2018-10-07T08:41:21Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.lordandtaylor.qa.scripts.junit.cucumber.functional.LordandTaylorLoginTestNG -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
